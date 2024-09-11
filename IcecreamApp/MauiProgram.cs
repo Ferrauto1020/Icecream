@@ -23,10 +23,13 @@ public static class MauiProgram
 		builder.Logging.AddDebug();
 #endif
 /* 
+
 		builder.Services
 		.AddSingleton<HomePage>()
 		.AddSingleton<SigninPage>()
-		.AddSingleton<SignupPage>(); */
+		.AddSingleton<SignupPage>(); 
+
+*/
 
 		return builder.Build();
 	}
