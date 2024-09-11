@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "UkpfGmGhqjFlxzxEbzj+x4mW97kVyWzlJNAxrJpophc=",
+  "Source": "IcecreamApp.Api",
+  "BasePath": "_content/IcecreamApp.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
