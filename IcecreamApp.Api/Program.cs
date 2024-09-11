@@ -11,10 +11,12 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var connectionString = builder.Configuration.GetConnectionString("Icecream");
-builder.Services.AddDbContext<DataContext>(options => options.UseSqlServer(connectionString));
-
+builder.Services.AddDbContext<DataContext>(options =>
+    options.UseNpgsql(connectionString));
 var app = builder.Build();
-
+#if DEBUG
+MigrateDatabase(app.Services);
+#endif
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
@@ -44,7 +46,21 @@ app.MapGet("/weatherforecast", () =>
 .WithName("GetWeatherForecast")
 .WithOpenApi();
 
+
+
 app.Run();
+
+
+static void MigrateDatabase(IServiceProvider sp)
+{
+    var scope = sp.CreateScope();
+    var dataContext = scope.ServiceProvider.GetRequiredService<DataContext>();
+    if (dataContext.Database.GetPendingMigrations().Any())
+    {
+        dataContext.Database.Migrate();
+    }
+
+}
 
 record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
 {

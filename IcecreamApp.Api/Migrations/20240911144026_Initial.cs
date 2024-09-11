@@ -1,11 +1,12 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
+using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 #nullable disable
 
 #pragma warning disable CA1814 // Prefer jagged arrays over multidimensional
 
-namespace IcecreamApp.Api.Data.Migrations
+namespace IcecreamApp.Api.Migrations
 {
     /// <inheritdoc />
     public partial class Initial : Migration
@@ -17,11 +18,11 @@ namespace IcecreamApp.Api.Data.Migrations
                 name: "Icecreams",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
-                    Price = table.Column<double>(type: "float", nullable: false),
-                    Image = table.Column<string>(type: "nvarchar(180)", maxLength: 180, nullable: false)
+                    Id = table.Column<int>(type: "integer", nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    Name = table.Column<string>(type: "character varying(100)", maxLength: 100, nullable: false),
+                    Price = table.Column<double>(type: "double precision", nullable: false),
+                    Image = table.Column<string>(type: "character varying(180)", maxLength: 180, nullable: false)
                 },
                 constraints: table =>
                 {
@@ -33,13 +34,13 @@ namespace IcecreamApp.Api.Data.Migrations
                 columns: table => new
                 {
                     Id = table.Column<long>(type: "bigint", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    OrderAt = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    CustomerId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    CustomerName = table.Column<string>(type: "nvarchar(30)", maxLength: 30, nullable: false),
-                    CustomerEmail = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
-                    CustomerAddress = table.Column<string>(type: "nvarchar(150)", maxLength: 150, nullable: false),
-                    TotalPrice = table.Column<double>(type: "float", nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    OrderAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
+                    CustomerId = table.Column<Guid>(type: "uuid", nullable: false),
+                    CustomerName = table.Column<string>(type: "character varying(30)", maxLength: 30, nullable: false),
+                    CustomerEmail = table.Column<string>(type: "character varying(100)", maxLength: 100, nullable: false),
+                    CustomerAddress = table.Column<string>(type: "character varying(150)", maxLength: 150, nullable: false),
+                    TotalPrice = table.Column<double>(type: "double precision", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -50,12 +51,12 @@ namespace IcecreamApp.Api.Data.Migrations
                 name: "Users",
                 columns: table => new
                 {
-                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    Name = table.Column<string>(type: "nvarchar(30)", maxLength: 30, nullable: false),
-                    Email = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
-                    Address = table.Column<string>(type: "nvarchar(150)", maxLength: 150, nullable: false),
-                    Salt = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: false),
-                    Hash = table.Column<string>(type: "nvarchar(180)", maxLength: 180, nullable: false)
+                    Id = table.Column<Guid>(type: "uuid", nullable: false),
+                    Name = table.Column<string>(type: "character varying(30)", maxLength: 30, nullable: false),
+                    Email = table.Column<string>(type: "character varying(100)", maxLength: 100, nullable: false),
+                    Address = table.Column<string>(type: "character varying(150)", maxLength: 150, nullable: false),
+                    Salt = table.Column<string>(type: "character varying(20)", maxLength: 20, nullable: false),
+                    Hash = table.Column<string>(type: "character varying(180)", maxLength: 180, nullable: false)
                 },
                 constraints: table =>
                 {
@@ -66,9 +67,9 @@ namespace IcecreamApp.Api.Data.Migrations
                 name: "IcecreamOptions",
                 columns: table => new
                 {
-                    IcecreamId = table.Column<int>(type: "int", nullable: false),
-                    Flavor = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
-                    Topping = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false)
+                    IcecreamId = table.Column<int>(type: "integer", nullable: false),
+                    Flavor = table.Column<string>(type: "character varying(50)", maxLength: 50, nullable: false),
+                    Topping = table.Column<string>(type: "character varying(50)", maxLength: 50, nullable: false)
                 },
                 constraints: table =>
                 {
@@ -86,15 +87,15 @@ namespace IcecreamApp.Api.Data.Migrations
                 columns: table => new
                 {
                     Id = table.Column<long>(type: "bigint", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     OrderId = table.Column<long>(type: "bigint", nullable: false),
-                    IcecreamId = table.Column<int>(type: "int", nullable: false),
-                    Name = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
-                    Price = table.Column<double>(type: "float", nullable: false),
-                    Quantity = table.Column<int>(type: "int", nullable: false),
-                    Flavor = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
-                    Topping = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
-                    TotalPrice = table.Column<double>(type: "float", nullable: false)
+                    IcecreamId = table.Column<int>(type: "integer", nullable: false),
+                    Name = table.Column<string>(type: "character varying(50)", maxLength: 50, nullable: false),
+                    Price = table.Column<double>(type: "double precision", nullable: false),
+                    Quantity = table.Column<int>(type: "integer", nullable: false),
+                    Flavor = table.Column<string>(type: "character varying(50)", maxLength: 50, nullable: false),
+                    Topping = table.Column<string>(type: "character varying(50)", maxLength: 50, nullable: false),
+                    TotalPrice = table.Column<double>(type: "double precision", nullable: false)
                 },
                 constraints: table =>
                 {

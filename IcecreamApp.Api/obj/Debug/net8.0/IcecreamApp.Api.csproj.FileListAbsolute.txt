@@ -138,3 +138,5 @@ F:\Giuseppe\lavori maui\Icecream\IcecreamApp.Api\obj\Debug\net8.0\refint\Icecrea
 F:\Giuseppe\lavori maui\Icecream\IcecreamApp.Api\obj\Debug\net8.0\IcecreamApp.Api.pdb
 F:\Giuseppe\lavori maui\Icecream\IcecreamApp.Api\obj\Debug\net8.0\IcecreamApp.Api.genruntimeconfig.cache
 F:\Giuseppe\lavori maui\Icecream\IcecreamApp.Api\obj\Debug\net8.0\ref\IcecreamApp.Api.dll
+f:\Giuseppe\lavori maui\Icecream\IcecreamApp.Api\bin\Debug\net8.0\Npgsql.dll
+f:\Giuseppe\lavori maui\Icecream\IcecreamApp.Api\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
