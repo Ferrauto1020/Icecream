@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "9Jxc7IKf+2Q=",
+  "dgSpecHash": "vjyTiu0sxS8=",
   "success": true,
   "projectFilePath": "F:\\Giuseppe\\lavori maui\\Icecream\\IcecreamApp\\IcecreamApp.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\giuseppe\\.nuget\\packages\\communitytoolkit.maui\\9.0.3\\communitytoolkit.maui.9.0.3.nupkg.sha512",
+    "C:\\Users\\giuseppe\\.nuget\\packages\\communitytoolkit.maui.core\\9.0.3\\communitytoolkit.maui.core.9.0.3.nupkg.sha512",
+    "C:\\Users\\giuseppe\\.nuget\\packages\\communitytoolkit.mvvm\\8.2.2\\communitytoolkit.mvvm.8.2.2.nupkg.sha512",
     "C:\\Users\\giuseppe\\.nuget\\packages\\googlegson\\2.10.1.4\\googlegson.2.10.1.4.nupkg.sha512",
     "C:\\Users\\giuseppe\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0\\microsoft.extensions.configuration.8.0.0.nupkg.sha512",
     "C:\\Users\\giuseppe\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
@@ -28,6 +31,7 @@
     "C:\\Users\\giuseppe\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.7\\microsoft.net.illink.tasks.8.0.7.nupkg.sha512",
     "C:\\Users\\giuseppe\\.nuget\\packages\\microsoft.windows.sdk.buildtools\\10.0.22621.756\\microsoft.windows.sdk.buildtools.10.0.22621.756.nupkg.sha512",
     "C:\\Users\\giuseppe\\.nuget\\packages\\microsoft.windowsappsdk\\1.5.240607001\\microsoft.windowsappsdk.1.5.240607001.nupkg.sha512",
+    "C:\\Users\\giuseppe\\.nuget\\packages\\system.speech\\8.0.0\\system.speech.8.0.0.nupkg.sha512",
     "C:\\Users\\giuseppe\\.nuget\\packages\\xamarin.android.glide\\4.15.1.2\\xamarin.android.glide.4.15.1.2.nupkg.sha512",
     "C:\\Users\\giuseppe\\.nuget\\packages\\xamarin.android.glide.annotations\\4.15.1.2\\xamarin.android.glide.annotations.4.15.1.2.nupkg.sha512",
     "C:\\Users\\giuseppe\\.nuget\\packages\\xamarin.android.glide.disklrucache\\4.15.1.2\\xamarin.android.glide.disklrucache.4.15.1.2.nupkg.sha512",

@@ -3,6 +3,9 @@ public class MonoPackageManager_Resources {
 	public static String[] Assemblies = new String[]{
 		/* We need to ensure that "IcecreamApp.dll" comes first in this list. */
 		"IcecreamApp.dll",
+		"CommunityToolkit.Maui.dll",
+		"CommunityToolkit.Maui.Core.dll",
+		"CommunityToolkit.Mvvm.dll",
 		"GoogleGson.dll",
 		"Microsoft.Extensions.Configuration.dll",
 		"Microsoft.Extensions.Configuration.Abstractions.dll",
@@ -136,6 +139,7 @@ public class MonoPackageManager_Resources {
 		"Microsoft.Maui.Controls.resources.dll",
 		"Microsoft.Maui.Controls.resources.dll",
 		"Microsoft.Maui.Controls.resources.dll",
+		"IcecreamApp.Shared.dll",
 		"Microsoft.Maui.Controls.HotReload.Forms.dll",
 		"Microsoft.VisualStudio.DesignTools.MobileTapContracts.dll",
 		"Microsoft.VisualStudio.DesignTools.TapContract.dll",

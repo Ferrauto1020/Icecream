@@ -2,6 +2,56 @@
   "version": 3,
   "targets": {
     "net8.0-android34.0": {
+      "CommunityToolkit.Maui/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "9.0.3",
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Core": "8.0.71",
+          "Microsoft.Maui.Essentials": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Mvvm/8.2.2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
       "GoogleGson/2.10.1.4": {
         "type": "package",
         "compile": {
@@ -2219,6 +2269,56 @@
       }
     },
     "net8.0-android34.0/android-arm": {
+      "CommunityToolkit.Maui/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "9.0.3",
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Core": "8.0.71",
+          "Microsoft.Maui.Essentials": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Mvvm/8.2.2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
       "GoogleGson/2.10.1.4": {
         "type": "package",
         "compile": {
@@ -4436,6 +4536,56 @@
       }
     },
     "net8.0-android34.0/android-arm64": {
+      "CommunityToolkit.Maui/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "9.0.3",
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Core": "8.0.71",
+          "Microsoft.Maui.Essentials": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Mvvm/8.2.2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
       "GoogleGson/2.10.1.4": {
         "type": "package",
         "compile": {
@@ -6653,6 +6803,56 @@
       }
     },
     "net8.0-android34.0/android-x64": {
+      "CommunityToolkit.Maui/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "9.0.3",
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Core": "8.0.71",
+          "Microsoft.Maui.Essentials": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Mvvm/8.2.2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
       "GoogleGson/2.10.1.4": {
         "type": "package",
         "compile": {
@@ -8870,6 +9070,56 @@
       }
     },
     "net8.0-android34.0/android-x86": {
+      "CommunityToolkit.Maui/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "9.0.3",
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Core": "8.0.71",
+          "Microsoft.Maui.Essentials": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Mvvm/8.2.2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
       "GoogleGson/2.10.1.4": {
         "type": "package",
         "compile": {
@@ -11087,6 +11337,56 @@
       }
     },
     "net8.0-android34.0/iossimulator-x64": {
+      "CommunityToolkit.Maui/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "9.0.3",
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Core": "8.0.71",
+          "Microsoft.Maui.Essentials": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Mvvm/8.2.2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
       "GoogleGson/2.10.1.4": {
         "type": "package",
         "compile": {
@@ -13304,6 +13604,56 @@
       }
     },
     "net8.0-android34.0/maccatalyst-x64": {
+      "CommunityToolkit.Maui/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "9.0.3",
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Core": "8.0.71",
+          "Microsoft.Maui.Essentials": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Mvvm/8.2.2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
       "GoogleGson/2.10.1.4": {
         "type": "package",
         "compile": {
@@ -15521,6 +15871,56 @@
       }
     },
     "net8.0-android34.0/win10-x64": {
+      "CommunityToolkit.Maui/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "9.0.3",
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Core": "8.0.71",
+          "Microsoft.Maui.Essentials": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Mvvm/8.2.2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
       "GoogleGson/2.10.1.4": {
         "type": "package",
         "compile": {
@@ -17738,6 +18138,56 @@
       }
     },
     "net8.0-ios17.5": {
+      "CommunityToolkit.Maui/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "9.0.3",
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-ios17.5/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios17.5/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Core": "8.0.71",
+          "Microsoft.Maui.Essentials": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-ios17.5/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios17.5/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Mvvm/8.2.2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
       "Microsoft.Extensions.Configuration/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -18169,6 +18619,56 @@
       }
     },
     "net8.0-ios17.5/android-arm": {
+      "CommunityToolkit.Maui/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "9.0.3",
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-ios17.5/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios17.5/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Core": "8.0.71",
+          "Microsoft.Maui.Essentials": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-ios17.5/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios17.5/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Mvvm/8.2.2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
       "Microsoft.Extensions.Configuration/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -18600,6 +19100,56 @@
       }
     },
     "net8.0-ios17.5/android-arm64": {
+      "CommunityToolkit.Maui/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "9.0.3",
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-ios17.5/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios17.5/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Core": "8.0.71",
+          "Microsoft.Maui.Essentials": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-ios17.5/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios17.5/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Mvvm/8.2.2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
       "Microsoft.Extensions.Configuration/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -19031,6 +19581,56 @@
       }
     },
     "net8.0-ios17.5/android-x64": {
+      "CommunityToolkit.Maui/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "9.0.3",
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-ios17.5/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios17.5/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Core": "8.0.71",
+          "Microsoft.Maui.Essentials": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-ios17.5/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios17.5/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Mvvm/8.2.2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
       "Microsoft.Extensions.Configuration/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -19462,6 +20062,56 @@
       }
     },
     "net8.0-ios17.5/android-x86": {
+      "CommunityToolkit.Maui/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "9.0.3",
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-ios17.5/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios17.5/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Core": "8.0.71",
+          "Microsoft.Maui.Essentials": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-ios17.5/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios17.5/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Mvvm/8.2.2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
       "Microsoft.Extensions.Configuration/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -19893,6 +20543,56 @@
       }
     },
     "net8.0-ios17.5/iossimulator-x64": {
+      "CommunityToolkit.Maui/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "9.0.3",
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-ios17.5/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios17.5/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Core": "8.0.71",
+          "Microsoft.Maui.Essentials": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-ios17.5/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios17.5/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Mvvm/8.2.2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
       "Microsoft.Extensions.Configuration/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -20324,6 +21024,56 @@
       }
     },
     "net8.0-ios17.5/maccatalyst-x64": {
+      "CommunityToolkit.Maui/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "9.0.3",
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-ios17.5/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios17.5/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Core": "8.0.71",
+          "Microsoft.Maui.Essentials": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-ios17.5/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios17.5/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Mvvm/8.2.2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
       "Microsoft.Extensions.Configuration/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -20755,6 +21505,56 @@
       }
     },
     "net8.0-ios17.5/win10-x64": {
+      "CommunityToolkit.Maui/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "9.0.3",
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-ios17.5/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios17.5/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Core": "8.0.71",
+          "Microsoft.Maui.Essentials": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-ios17.5/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios17.5/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Mvvm/8.2.2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
       "Microsoft.Extensions.Configuration/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -21186,6 +21986,56 @@
       }
     },
     "net8.0-maccatalyst17.5": {
+      "CommunityToolkit.Maui/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "9.0.3",
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst17.5/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.5/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Core": "8.0.71",
+          "Microsoft.Maui.Essentials": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst17.5/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.5/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Mvvm/8.2.2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
       "Microsoft.Extensions.Configuration/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -21617,6 +22467,56 @@
       }
     },
     "net8.0-maccatalyst17.5/android-arm": {
+      "CommunityToolkit.Maui/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "9.0.3",
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst17.5/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.5/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Core": "8.0.71",
+          "Microsoft.Maui.Essentials": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst17.5/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.5/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Mvvm/8.2.2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
       "Microsoft.Extensions.Configuration/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -22048,6 +22948,56 @@
       }
     },
     "net8.0-maccatalyst17.5/android-arm64": {
+      "CommunityToolkit.Maui/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "9.0.3",
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst17.5/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.5/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Core": "8.0.71",
+          "Microsoft.Maui.Essentials": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst17.5/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.5/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Mvvm/8.2.2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
       "Microsoft.Extensions.Configuration/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -22479,6 +23429,56 @@
       }
     },
     "net8.0-maccatalyst17.5/android-x64": {
+      "CommunityToolkit.Maui/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "9.0.3",
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst17.5/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.5/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Core": "8.0.71",
+          "Microsoft.Maui.Essentials": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst17.5/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.5/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Mvvm/8.2.2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
       "Microsoft.Extensions.Configuration/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -22910,6 +23910,56 @@
       }
     },
     "net8.0-maccatalyst17.5/android-x86": {
+      "CommunityToolkit.Maui/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "9.0.3",
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst17.5/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.5/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Core": "8.0.71",
+          "Microsoft.Maui.Essentials": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst17.5/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.5/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Mvvm/8.2.2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
       "Microsoft.Extensions.Configuration/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -23341,6 +24391,56 @@
       }
     },
     "net8.0-maccatalyst17.5/iossimulator-x64": {
+      "CommunityToolkit.Maui/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "9.0.3",
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst17.5/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.5/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Core": "8.0.71",
+          "Microsoft.Maui.Essentials": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst17.5/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.5/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Mvvm/8.2.2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
       "Microsoft.Extensions.Configuration/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -23772,6 +24872,56 @@
       }
     },
     "net8.0-maccatalyst17.5/maccatalyst-x64": {
+      "CommunityToolkit.Maui/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "9.0.3",
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst17.5/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.5/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Core": "8.0.71",
+          "Microsoft.Maui.Essentials": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst17.5/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.5/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Mvvm/8.2.2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
       "Microsoft.Extensions.Configuration/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -24203,6 +25353,56 @@
       }
     },
     "net8.0-maccatalyst17.5/win10-x64": {
+      "CommunityToolkit.Maui/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "9.0.3",
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst17.5/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.5/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Core": "8.0.71",
+          "Microsoft.Maui.Essentials": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst17.5/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.5/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Mvvm/8.2.2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
       "Microsoft.Extensions.Configuration/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -24634,6 +25834,57 @@
       }
     },
     "net8.0-windows10.0.19041": {
+      "CommunityToolkit.Maui/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "9.0.3",
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Core": "8.0.71",
+          "Microsoft.Maui.Essentials": "8.0.71",
+          "System.Speech": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Mvvm/8.2.2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
       "Microsoft.Extensions.Configuration/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -25208,6 +26459,24 @@
           }
         }
       },
+      "System.Speech/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/System.Speech.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/System.Speech.dll": {}
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net8.0/System.Speech.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
       "IcecreamApp.Shared/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -25220,6 +26489,57 @@
       }
     },
     "net8.0-windows10.0.19041/android-arm": {
+      "CommunityToolkit.Maui/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "9.0.3",
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Core": "8.0.71",
+          "Microsoft.Maui.Essentials": "8.0.71",
+          "System.Speech": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Mvvm/8.2.2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
       "Microsoft.Extensions.Configuration/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -25752,6 +27072,18 @@
         "build": {
           "buildTransitive/Microsoft.WindowsAppSDK.props": {},
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
+        }
+      },
+      "System.Speech/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/System.Speech.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/System.Speech.dll": {}
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "IcecreamApp.Shared/1.0.0": {
@@ -25766,6 +27098,57 @@
       }
     },
     "net8.0-windows10.0.19041/android-arm64": {
+      "CommunityToolkit.Maui/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "9.0.3",
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Core": "8.0.71",
+          "Microsoft.Maui.Essentials": "8.0.71",
+          "System.Speech": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Mvvm/8.2.2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
       "Microsoft.Extensions.Configuration/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -26298,6 +27681,18 @@
         "build": {
           "buildTransitive/Microsoft.WindowsAppSDK.props": {},
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
+        }
+      },
+      "System.Speech/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/System.Speech.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/System.Speech.dll": {}
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "IcecreamApp.Shared/1.0.0": {
@@ -26312,6 +27707,57 @@
       }
     },
     "net8.0-windows10.0.19041/android-x64": {
+      "CommunityToolkit.Maui/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "9.0.3",
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Core": "8.0.71",
+          "Microsoft.Maui.Essentials": "8.0.71",
+          "System.Speech": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Mvvm/8.2.2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
       "Microsoft.Extensions.Configuration/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -26844,6 +28290,18 @@
         "build": {
           "buildTransitive/Microsoft.WindowsAppSDK.props": {},
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
+        }
+      },
+      "System.Speech/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/System.Speech.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/System.Speech.dll": {}
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "IcecreamApp.Shared/1.0.0": {
@@ -26858,6 +28316,57 @@
       }
     },
     "net8.0-windows10.0.19041/android-x86": {
+      "CommunityToolkit.Maui/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "9.0.3",
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Core": "8.0.71",
+          "Microsoft.Maui.Essentials": "8.0.71",
+          "System.Speech": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Mvvm/8.2.2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
       "Microsoft.Extensions.Configuration/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -27390,6 +28899,18 @@
         "build": {
           "buildTransitive/Microsoft.WindowsAppSDK.props": {},
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
+        }
+      },
+      "System.Speech/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/System.Speech.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/System.Speech.dll": {}
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "IcecreamApp.Shared/1.0.0": {
@@ -27404,6 +28925,57 @@
       }
     },
     "net8.0-windows10.0.19041/iossimulator-x64": {
+      "CommunityToolkit.Maui/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "9.0.3",
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Core": "8.0.71",
+          "Microsoft.Maui.Essentials": "8.0.71",
+          "System.Speech": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Mvvm/8.2.2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
       "Microsoft.Extensions.Configuration/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -27936,6 +29508,18 @@
         "build": {
           "buildTransitive/Microsoft.WindowsAppSDK.props": {},
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
+        }
+      },
+      "System.Speech/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/System.Speech.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/System.Speech.dll": {}
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "IcecreamApp.Shared/1.0.0": {
@@ -27950,6 +29534,57 @@
       }
     },
     "net8.0-windows10.0.19041/maccatalyst-x64": {
+      "CommunityToolkit.Maui/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "9.0.3",
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Core": "8.0.71",
+          "Microsoft.Maui.Essentials": "8.0.71",
+          "System.Speech": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Mvvm/8.2.2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
       "Microsoft.Extensions.Configuration/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -28484,6 +30119,18 @@
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
         }
       },
+      "System.Speech/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/System.Speech.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/System.Speech.dll": {}
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
       "IcecreamApp.Shared/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -28496,6 +30143,57 @@
       }
     },
     "net8.0-windows10.0.19041/win10-x64": {
+      "CommunityToolkit.Maui/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "9.0.3",
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Core": "8.0.71",
+          "Microsoft.Maui.Essentials": "8.0.71",
+          "System.Speech": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Mvvm/8.2.2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
       "Microsoft.Extensions.Configuration/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -29036,6 +30734,18 @@
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
         }
       },
+      "System.Speech/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/System.Speech.dll": {}
+        },
+        "runtime": {
+          "runtimes/win/lib/net8.0/System.Speech.dll": {}
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
       "IcecreamApp.Shared/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -29049,6 +30759,90 @@
     }
   },
   "libraries": {
+    "CommunityToolkit.Maui/9.0.3": {
+      "sha512": "6X8T1AjI3ed+GUKgugJH5btNiPPoDJAxYO8HAm2wcWl1izmjVTfGoJQGj5A/ry2aa4+QNAWPxTn/mIpjukykYg==",
+      "type": "package",
+      "path": "communitytoolkit.maui/9.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ReadMe.txt",
+        "analyzers/dotnet/cs/CommunityToolkit.Maui.Analyzers.CodeFixes.dll",
+        "analyzers/dotnet/cs/CommunityToolkit.Maui.Analyzers.dll",
+        "analyzers/dotnet/cs/CommunityToolkit.Maui.SourceGenerators.dll",
+        "communitytoolkit.maui.9.0.3.nupkg.sha512",
+        "communitytoolkit.maui.nuspec",
+        "icon.png",
+        "lib/net8.0-android34.0/CommunityToolkit.Maui.dll",
+        "lib/net8.0-android34.0/CommunityToolkit.Maui.xml",
+        "lib/net8.0-ios17.5/CommunityToolkit.Maui.dll",
+        "lib/net8.0-ios17.5/CommunityToolkit.Maui.xml",
+        "lib/net8.0-maccatalyst17.5/CommunityToolkit.Maui.dll",
+        "lib/net8.0-maccatalyst17.5/CommunityToolkit.Maui.xml",
+        "lib/net8.0-tizen8.0/CommunityToolkit.Maui.dll",
+        "lib/net8.0-tizen8.0/CommunityToolkit.Maui.xml",
+        "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.dll",
+        "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.xml",
+        "lib/net8.0/CommunityToolkit.Maui.dll",
+        "lib/net8.0/CommunityToolkit.Maui.xml"
+      ]
+    },
+    "CommunityToolkit.Maui.Core/9.0.3": {
+      "sha512": "NiMX2+m3dzNN1H/tW+aFxh1Hcgj5AKUm4Rf6mbhGKaYBe4J6asuuP8Qx1TwYS4HEKLFMvn0LIk1MFSD4TqqgYQ==",
+      "type": "package",
+      "path": "communitytoolkit.maui.core/9.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ReadMe.txt",
+        "communitytoolkit.maui.core.9.0.3.nupkg.sha512",
+        "communitytoolkit.maui.core.nuspec",
+        "icon.png",
+        "lib/net8.0-android34.0/CommunityToolkit.Maui.Core.dll",
+        "lib/net8.0-android34.0/CommunityToolkit.Maui.Core.xml",
+        "lib/net8.0-ios17.5/CommunityToolkit.Maui.Core.dll",
+        "lib/net8.0-ios17.5/CommunityToolkit.Maui.Core.xml",
+        "lib/net8.0-maccatalyst17.5/CommunityToolkit.Maui.Core.dll",
+        "lib/net8.0-maccatalyst17.5/CommunityToolkit.Maui.Core.xml",
+        "lib/net8.0-tizen8.0/CommunityToolkit.Maui.Core.dll",
+        "lib/net8.0-tizen8.0/CommunityToolkit.Maui.Core.xml",
+        "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.Core.dll",
+        "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.Core.xml",
+        "lib/net8.0/CommunityToolkit.Maui.Core.dll",
+        "lib/net8.0/CommunityToolkit.Maui.Core.xml"
+      ]
+    },
+    "CommunityToolkit.Mvvm/8.2.2": {
+      "sha512": "r0g0k9tGYdrnz8R7T3x5UiokDffeevzK/2P/9SBL6fqLgN8B157MIi/bVUWI1KAz6ZorZrK9AdABCWUeXZZsvA==",
+      "type": "package",
+      "path": "communitytoolkit.mvvm/8.2.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "License.md",
+        "ThirdPartyNotices.txt",
+        "analyzers/dotnet/roslyn4.0/cs/CommunityToolkit.Mvvm.CodeFixers.dll",
+        "analyzers/dotnet/roslyn4.0/cs/CommunityToolkit.Mvvm.SourceGenerators.dll",
+        "analyzers/dotnet/roslyn4.3/cs/CommunityToolkit.Mvvm.CodeFixers.dll",
+        "analyzers/dotnet/roslyn4.3/cs/CommunityToolkit.Mvvm.SourceGenerators.dll",
+        "build/netstandard2.0/CommunityToolkit.Mvvm.targets",
+        "build/netstandard2.1/CommunityToolkit.Mvvm.targets",
+        "buildTransitive/netstandard2.0/CommunityToolkit.Mvvm.targets",
+        "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets",
+        "communitytoolkit.mvvm.8.2.2.nupkg.sha512",
+        "communitytoolkit.mvvm.nuspec",
+        "lib/net6.0/CommunityToolkit.Mvvm.dll",
+        "lib/net6.0/CommunityToolkit.Mvvm.pdb",
+        "lib/net6.0/CommunityToolkit.Mvvm.xml",
+        "lib/netstandard2.0/CommunityToolkit.Mvvm.dll",
+        "lib/netstandard2.0/CommunityToolkit.Mvvm.pdb",
+        "lib/netstandard2.0/CommunityToolkit.Mvvm.xml",
+        "lib/netstandard2.1/CommunityToolkit.Mvvm.dll",
+        "lib/netstandard2.1/CommunityToolkit.Mvvm.pdb",
+        "lib/netstandard2.1/CommunityToolkit.Mvvm.xml"
+      ]
+    },
     "GoogleGson/2.10.1.4": {
       "sha512": "L1vdbwbQzvKUoUGiMpMoJG5fqfLXaP6zMy1a26AYJQJSQKUO7Ojr2U5BAmgQoRxQ8J2GDjBfnfgnrsnorb4y5Q==",
       "type": "package",
@@ -31175,6 +32969,32 @@
         "tools/x86/GenXbf.dll"
       ]
     },
+    "System.Speech/8.0.0": {
+      "sha512": "CNuiA6vb95Oe5PRjClZEBiaju31vwB8OIeCgeSBXyZL6+MS4RVVB2X/C11z0xCkooHE3Vy91nM2z76emIzR+sg==",
+      "type": "package",
+      "path": "system.speech/8.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/System.Speech.targets",
+        "lib/net462/_._",
+        "lib/net6.0/System.Speech.dll",
+        "lib/net7.0/System.Speech.dll",
+        "lib/net8.0/System.Speech.dll",
+        "lib/netstandard2.0/System.Speech.dll",
+        "runtimes/win/lib/net6.0/System.Speech.dll",
+        "runtimes/win/lib/net7.0/System.Speech.dll",
+        "runtimes/win/lib/net8.0/System.Speech.dll",
+        "system.speech.8.0.0.nupkg.sha512",
+        "system.speech.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
     "Xamarin.Android.Glide/4.15.1.2": {
       "sha512": "DcekP+BXm4jFMV7zjHEltj01uiXcItq1kjGa79pj/Vx1rk3Ac2VXdmwGw06HXDP8n2XZsDh8dAoSI48G4KODRA==",
       "type": "package",
@@ -33220,6 +35040,8 @@
   },
   "projectFileDependencyGroups": {
     "net8.0-android34.0": [
+      "CommunityToolkit.Maui >= 9.0.3",
+      "CommunityToolkit.Mvvm >= 8.2.2",
       "IcecreamApp.Shared >= 1.0.0",
       "Microsoft.Extensions.Logging.Debug >= 8.0.0",
       "Microsoft.Maui.Controls >= 8.0.71",
@@ -33227,6 +35049,8 @@
       "Microsoft.NET.ILLink.Tasks >= 8.0.7"
     ],
     "net8.0-ios17.5": [
+      "CommunityToolkit.Maui >= 9.0.3",
+      "CommunityToolkit.Mvvm >= 8.2.2",
       "IcecreamApp.Shared >= 1.0.0",
       "Microsoft.Extensions.Logging.Debug >= 8.0.0",
       "Microsoft.Maui.Controls >= 8.0.71",
@@ -33234,6 +35058,8 @@
       "Microsoft.NET.ILLink.Tasks >= 8.0.7"
     ],
     "net8.0-maccatalyst17.5": [
+      "CommunityToolkit.Maui >= 9.0.3",
+      "CommunityToolkit.Mvvm >= 8.2.2",
       "IcecreamApp.Shared >= 1.0.0",
       "Microsoft.Extensions.Logging.Debug >= 8.0.0",
       "Microsoft.Maui.Controls >= 8.0.71",
@@ -33241,6 +35067,8 @@
       "Microsoft.NET.ILLink.Tasks >= 8.0.7"
     ],
     "net8.0-windows10.0.19041": [
+      "CommunityToolkit.Maui >= 9.0.3",
+      "CommunityToolkit.Mvvm >= 8.2.2",
       "IcecreamApp.Shared >= 1.0.0",
       "Microsoft.Extensions.Logging.Debug >= 8.0.0",
       "Microsoft.Maui.Controls >= 8.0.71",
@@ -33322,6 +35150,14 @@
       "net8.0-android34.0": {
         "targetAlias": "net8.0-android",
         "dependencies": {
+          "CommunityToolkit.Maui": {
+            "target": "Package",
+            "version": "[9.0.3, )"
+          },
+          "CommunityToolkit.Mvvm": {
+            "target": "Package",
+            "version": "[8.2.2, )"
+          },
           "Microsoft.Extensions.Logging.Debug": {
             "target": "Package",
             "version": "[8.0.0, )"
@@ -33365,6 +35201,14 @@
       "net8.0-ios17.5": {
         "targetAlias": "net8.0-ios",
         "dependencies": {
+          "CommunityToolkit.Maui": {
+            "target": "Package",
+            "version": "[9.0.3, )"
+          },
+          "CommunityToolkit.Mvvm": {
+            "target": "Package",
+            "version": "[8.2.2, )"
+          },
           "Microsoft.Extensions.Logging.Debug": {
             "target": "Package",
             "version": "[8.0.0, )"
@@ -33408,6 +35252,14 @@
       "net8.0-maccatalyst17.5": {
         "targetAlias": "net8.0-maccatalyst",
         "dependencies": {
+          "CommunityToolkit.Maui": {
+            "target": "Package",
+            "version": "[9.0.3, )"
+          },
+          "CommunityToolkit.Mvvm": {
+            "target": "Package",
+            "version": "[8.2.2, )"
+          },
           "Microsoft.Extensions.Logging.Debug": {
             "target": "Package",
             "version": "[8.0.0, )"
@@ -33452,6 +35304,14 @@
       "net8.0-windows10.0.19041": {
         "targetAlias": "net8.0-windows10.0.19041.0",
         "dependencies": {
+          "CommunityToolkit.Maui": {
+            "target": "Package",
+            "version": "[9.0.3, )"
+          },
+          "CommunityToolkit.Mvvm": {
+            "target": "Package",
+            "version": "[8.2.2, )"
+          },
           "Microsoft.Extensions.Logging.Debug": {
             "target": "Package",
             "version": "[8.0.0, )"
