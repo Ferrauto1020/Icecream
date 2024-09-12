@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IcecreamApp", "IcecreamApp\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IcecreamApp.Api", "IcecreamApp.Api\IcecreamApp.Api.csproj", "{22D6F81E-975B-4C44-ADE5-E85FA8D50C9B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IcecreamApp.Shared", "IcecreamApp.Shared\IcecreamApp.Shared.csproj", "{EEAC0241-0565-4583-A68A-7E388C1D3A02}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{22D6F81E-975B-4C44-ADE5-E85FA8D50C9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{22D6F81E-975B-4C44-ADE5-E85FA8D50C9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{22D6F81E-975B-4C44-ADE5-E85FA8D50C9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEAC0241-0565-4583-A68A-7E388C1D3A02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEAC0241-0565-4583-A68A-7E388C1D3A02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEAC0241-0565-4583-A68A-7E388C1D3A02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEAC0241-0565-4583-A68A-7E388C1D3A02}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

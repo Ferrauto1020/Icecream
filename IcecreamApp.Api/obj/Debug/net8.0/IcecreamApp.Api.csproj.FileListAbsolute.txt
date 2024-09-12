@@ -1,3 +1,11 @@
+F:\Giuseppe\lavori maui\Icecream\IcecreamApp.Api\obj\Debug\net8.0\IcecreamApp.Api.csproj.AssemblyReference.cache
+F:\Giuseppe\lavori maui\Icecream\IcecreamApp.Api\obj\Debug\net8.0\IcecreamApp.Api.GeneratedMSBuildEditorConfig.editorconfig
+F:\Giuseppe\lavori maui\Icecream\IcecreamApp.Api\obj\Debug\net8.0\IcecreamApp.Api.AssemblyInfoInputs.cache
+F:\Giuseppe\lavori maui\Icecream\IcecreamApp.Api\obj\Debug\net8.0\IcecreamApp.Api.AssemblyInfo.cs
+F:\Giuseppe\lavori maui\Icecream\IcecreamApp.Api\obj\Debug\net8.0\IcecreamApp.Api.csproj.CoreCompileInputs.cache
+F:\Giuseppe\lavori maui\Icecream\IcecreamApp.Api\obj\Debug\net8.0\IcecreamApp.Api.MvcApplicationPartsAssemblyInfo.cs
+F:\Giuseppe\lavori maui\Icecream\IcecreamApp.Api\obj\Debug\net8.0\IcecreamApp.Api.MvcApplicationPartsAssemblyInfo.cache
+F:\Giuseppe\lavori maui\Icecream\IcecreamApp.Api\obj\Debug\net8.0\IcecreamApp.Api.sourcelink.json
 F:\Giuseppe\lavori maui\Icecream\IcecreamApp.Api\bin\Debug\net8.0\appsettings.Development.json
 F:\Giuseppe\lavori maui\Icecream\IcecreamApp.Api\bin\Debug\net8.0\appsettings.json
 F:\Giuseppe\lavori maui\Icecream\IcecreamApp.Api\bin\Debug\net8.0\IcecreamApp.Api.exe
@@ -8,6 +16,7 @@ F:\Giuseppe\lavori maui\Icecream\IcecreamApp.Api\bin\Debug\net8.0\IcecreamApp.Ap
 F:\Giuseppe\lavori maui\Icecream\IcecreamApp.Api\bin\Debug\net8.0\Azure.Core.dll
 F:\Giuseppe\lavori maui\Icecream\IcecreamApp.Api\bin\Debug\net8.0\Azure.Identity.dll
 F:\Giuseppe\lavori maui\Icecream\IcecreamApp.Api\bin\Debug\net8.0\Humanizer.dll
+F:\Giuseppe\lavori maui\Icecream\IcecreamApp.Api\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 F:\Giuseppe\lavori maui\Icecream\IcecreamApp.Api\bin\Debug\net8.0\Microsoft.AspNetCore.OpenApi.dll
 F:\Giuseppe\lavori maui\Icecream\IcecreamApp.Api\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
 F:\Giuseppe\lavori maui\Icecream\IcecreamApp.Api\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
@@ -33,6 +42,8 @@ F:\Giuseppe\lavori maui\Icecream\IcecreamApp.Api\bin\Debug\net8.0\Microsoft.Open
 F:\Giuseppe\lavori maui\Icecream\IcecreamApp.Api\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
 F:\Giuseppe\lavori maui\Icecream\IcecreamApp.Api\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
 F:\Giuseppe\lavori maui\Icecream\IcecreamApp.Api\bin\Debug\net8.0\Mono.TextTemplating.dll
+F:\Giuseppe\lavori maui\Icecream\IcecreamApp.Api\bin\Debug\net8.0\Npgsql.dll
+F:\Giuseppe\lavori maui\Icecream\IcecreamApp.Api\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
 F:\Giuseppe\lavori maui\Icecream\IcecreamApp.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
 F:\Giuseppe\lavori maui\Icecream\IcecreamApp.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 F:\Giuseppe\lavori maui\Icecream\IcecreamApp.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -116,14 +127,6 @@ F:\Giuseppe\lavori maui\Icecream\IcecreamApp.Api\bin\Debug\net8.0\runtimes\win\l
 F:\Giuseppe\lavori maui\Icecream\IcecreamApp.Api\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 F:\Giuseppe\lavori maui\Icecream\IcecreamApp.Api\bin\Debug\net8.0\IcecreamApp.Shared.dll
 F:\Giuseppe\lavori maui\Icecream\IcecreamApp.Api\bin\Debug\net8.0\IcecreamApp.Shared.pdb
-F:\Giuseppe\lavori maui\Icecream\IcecreamApp.Api\obj\Debug\net8.0\IcecreamApp.Api.csproj.AssemblyReference.cache
-F:\Giuseppe\lavori maui\Icecream\IcecreamApp.Api\obj\Debug\net8.0\IcecreamApp.Api.GeneratedMSBuildEditorConfig.editorconfig
-F:\Giuseppe\lavori maui\Icecream\IcecreamApp.Api\obj\Debug\net8.0\IcecreamApp.Api.AssemblyInfoInputs.cache
-F:\Giuseppe\lavori maui\Icecream\IcecreamApp.Api\obj\Debug\net8.0\IcecreamApp.Api.AssemblyInfo.cs
-F:\Giuseppe\lavori maui\Icecream\IcecreamApp.Api\obj\Debug\net8.0\IcecreamApp.Api.csproj.CoreCompileInputs.cache
-F:\Giuseppe\lavori maui\Icecream\IcecreamApp.Api\obj\Debug\net8.0\IcecreamApp.Api.MvcApplicationPartsAssemblyInfo.cs
-F:\Giuseppe\lavori maui\Icecream\IcecreamApp.Api\obj\Debug\net8.0\IcecreamApp.Api.MvcApplicationPartsAssemblyInfo.cache
-F:\Giuseppe\lavori maui\Icecream\IcecreamApp.Api\obj\Debug\net8.0\IcecreamApp.Api.sourcelink.json
 F:\Giuseppe\lavori maui\Icecream\IcecreamApp.Api\obj\Debug\net8.0\staticwebassets.build.json
 F:\Giuseppe\lavori maui\Icecream\IcecreamApp.Api\obj\Debug\net8.0\staticwebassets.development.json
 F:\Giuseppe\lavori maui\Icecream\IcecreamApp.Api\obj\Debug\net8.0\staticwebassets\msbuild.IcecreamApp.Api.Microsoft.AspNetCore.StaticWebAssets.props
@@ -138,5 +141,3 @@ F:\Giuseppe\lavori maui\Icecream\IcecreamApp.Api\obj\Debug\net8.0\refint\Icecrea
 F:\Giuseppe\lavori maui\Icecream\IcecreamApp.Api\obj\Debug\net8.0\IcecreamApp.Api.pdb
 F:\Giuseppe\lavori maui\Icecream\IcecreamApp.Api\obj\Debug\net8.0\IcecreamApp.Api.genruntimeconfig.cache
 F:\Giuseppe\lavori maui\Icecream\IcecreamApp.Api\obj\Debug\net8.0\ref\IcecreamApp.Api.dll
-f:\Giuseppe\lavori maui\Icecream\IcecreamApp.Api\bin\Debug\net8.0\Npgsql.dll
-f:\Giuseppe\lavori maui\Icecream\IcecreamApp.Api\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll

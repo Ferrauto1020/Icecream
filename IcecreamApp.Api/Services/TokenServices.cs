@@ -1,6 +1,7 @@
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
+using IcecreamApp.Shared.Dtos;
 using Microsoft.IdentityModel.Tokens;
 
 namespace IcecreamApp.Api.Services
@@ -21,7 +22,7 @@ namespace IcecreamApp.Api.Services
             };
 
 
-        public string GenerateJwt(Guid userId, string userName, string email, string address)
+        public string GenerateJwt(LoggedInUser user)
         {
             var securityKey = GetSecurityKey(_configuration);
             var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
@@ -30,10 +31,10 @@ namespace IcecreamApp.Api.Services
             var expireInMinute = Convert.ToInt32(_configuration["Jwt:ExpireInMinute"]);
 
             Claim[] claims = [
-                new Claim(ClaimTypes.NameIdentifier,userId.ToString()),
-                new Claim(ClaimTypes.Name,userName),
-                new Claim(ClaimTypes.Email,email),
-                new Claim(ClaimTypes.StreetAddress,address),
+                new Claim(ClaimTypes.NameIdentifier,user.Id.ToString()),
+                new Claim(ClaimTypes.Name,user.Name),
+                new Claim(ClaimTypes.Email,user.Email),
+                new Claim(ClaimTypes.StreetAddress,user.Address),
             ];
 
             var token = new JwtSecurityToken(
