@@ -11,7 +11,7 @@ namespace IcecreamApp.Api.Services
         private readonly DataContext _context = context;
         private readonly TokenServices _tokenServices = tokenServices;
         private readonly PasswordServices _passwordServices = passwordServices;
-        public async Task<ResultWithDataDto<AuthResponseDto>> SigninAsync(SignupRequestDto dto)
+        public async Task<ResultWithDataDto<AuthResponseDto>> SignupAsync(SignupRequestDto dto)
         {
             if (await _context.Users.AsNoTracking().AnyAsync(u => u.Email == dto.Email))
             {
@@ -39,7 +39,7 @@ namespace IcecreamApp.Api.Services
 
 
 
-        public async Task<ResultWithDataDto<AuthResponseDto>> SignupAsync(SigninRequestDto dto)
+        public async Task<ResultWithDataDto<AuthResponseDto>> SigninAsync(SigninRequestDto dto)
         {
             var dbUser = await _context.Users
             .AsNoTracking()

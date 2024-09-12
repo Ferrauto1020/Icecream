@@ -22,7 +22,9 @@ builder.Services.AddAuthentication(options =>
     options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
 }).AddJwtBearer(jwtOptions =>
     jwtOptions.TokenValidationParameters = TokenServices.GetTokenValidationParameters(builder.Configuration));
-builder.Services.AddAuthentication();
+
+builder.Services.AddAuthorization();
+
 builder.Services
         .AddTransient<TokenServices>()
         .AddTransient<PasswordServices>()
@@ -45,27 +47,8 @@ app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
 
-var summaries = new[]
-{
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-};
 
-app.MapGet("/weatherforecast", () =>
-{
-    var forecast = Enumerable.Range(1, 5).Select(index =>
-        new WeatherForecast
-        (
-            DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-            Random.Shared.Next(-20, 55),
-            summaries[Random.Shared.Next(summaries.Length)]
-        ))
-        .ToArray();
-    return forecast;
-})
-.WithName("GetWeatherForecast")
-.WithOpenApi();
-
-
+app.MapEndpoints();
 
 app.Run();
 
@@ -81,7 +64,3 @@ static void MigrateDatabase(IServiceProvider sp)
 
 }
 
-record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
-{
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-}

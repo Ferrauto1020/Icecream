@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = IcecreamApp.Shared
-build_property.ProjectDir = F:\Giuseppe\lavori maui\Icecream\IcecreamApp.Shared\
+build_property.ProjectDir = f:\Giuseppe\lavori maui\Icecream\IcecreamApp.Shared\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
