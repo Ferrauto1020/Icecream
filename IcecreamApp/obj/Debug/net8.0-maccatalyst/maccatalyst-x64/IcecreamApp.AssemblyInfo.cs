@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("IcecreamApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+ce5a89991d8fbcf142ef4560312d967853978073")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+273fc696bbd214973b50d477b05cb8d237ad0e2e")]
 [assembly: System.Reflection.AssemblyProductAttribute("IcecreamApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("IcecreamApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
