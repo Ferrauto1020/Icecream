@@ -6,6 +6,7 @@ using Microsoft.Maui.Controls.PlatformConfiguration;
 using System.Net.Security;
 using System.Security.Cryptography.X509Certificates;
 using IcecreamApp.Services;
+using IcecreamApp.ViewModels;
 
 
 namespace IcecreamApp;
@@ -28,14 +29,17 @@ public static class MauiProgram
 #if DEBUG
 		builder.Logging.AddDebug();
 #endif
+
 		/* 
+						builder.Services
+						.AddSingleton<HomePage>()
+						.AddSingleton<SigninPage>()
+						.AddSingleton<SignupPage>(); 
+		 */
+		builder.Services.AddTransient<AuthViewModel>()
+						.AddTransient<SigninPage>()
+						.AddTransient<SignupPage>();
 
-				builder.Services
-				.AddSingleton<HomePage>()
-				.AddSingleton<SigninPage>()
-				.AddSingleton<SignupPage>(); 
-
-		*/
 		ConfigureRefit(builder.Services);
 		return builder.Build();
 	}

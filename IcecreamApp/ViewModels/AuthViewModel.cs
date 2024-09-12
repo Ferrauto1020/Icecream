@@ -1,20 +1,26 @@
 
 using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
+using IcecreamApp.Pages;
+using IcecreamApp.Services;
+using IcecreamApp.Shared.Dtos;
 
 namespace IcecreamApp.ViewModels
 {
-    public partial class AuthViewModel : BaseViewModel
+    public partial class AuthViewModel(IAuthApi authApi) : BaseViewModel
     {
+        private readonly IAuthApi _authApi = authApi;
 
-        [ObservableProperty]
+        [ObservableProperty, NotifyPropertyChangedFor(nameof(CanSignup))]
         private string? _name;
-        [ObservableProperty]
+
+        [ObservableProperty, NotifyPropertyChangedFor(nameof(CanSignin)), NotifyPropertyChangedFor(nameof(CanSignup))]
         private string? _email;
-        [ObservableProperty]
+
+        [ObservableProperty, NotifyPropertyChangedFor(nameof(CanSignin)), NotifyPropertyChangedFor(nameof(CanSignup))]
         private string? _password;
 
-
-        [ObservableProperty]
+        [ObservableProperty, NotifyPropertyChangedFor(nameof(CanSignup))]
         private string? _address;
 
 
@@ -24,22 +30,34 @@ namespace IcecreamApp.ViewModels
 
         public bool CanSignup =>
         CanSignin &&
-        !string.IsNullOrWhiteSpace(Password) &&
+        !string.IsNullOrWhiteSpace(Name) &&
         !string.IsNullOrWhiteSpace(Address);
 
-       [RelayCommand]       
+        [RelayCommand]
         private async Task SignupAsync()
         {
             IsBusy = true;
             try
             {
-                var signupDto = new SignupRequestDto(Name,Email,Password,Address);
+                var signupDto = new SignupRequestDto(Name, Email, Password, Address);
                 //make Api call
+                var results = await _authApi.SignupAsync(signupDto);
+                if (results.IsSuccess)
+                {
+
+                    await ShowAlertAsync(results.Data.Token);
+                    await GoToAsync($"//{nameof(HomePage)}", animate: true);
+                    //navigate to homepage
+                }
+                else
+                {
+                    //
+                    await ShowErrorAlertAsync(results.ErrorMessage ?? "Unknown error in signin up");
+                }
             }
-            catch (System.Exception)
+            catch (System.Exception ex)
             {
-                
-                throw;
+                await ShowErrorAlertAsync(ex.Message);
             }
             finally
             {
@@ -47,6 +65,35 @@ namespace IcecreamApp.ViewModels
             }
         }
 
+        private async Task SigninAsync()
+        {
+            IsBusy = true;
+            try
+            {
+                var signinDto = new SigninRequestDto(Email, Password);
+                //make Api call
+                var results = await _authApi.SigninAsync(signinDto);
+                if (results.IsSuccess)
+                {
 
+                    await ShowAlertAsync(results.Data.User.Name);
+                    await GoToAsync($"//{nameof(HomePage)}", animate: true);
+                    //navigate to homepage
+                }
+                else
+                {
+                    //
+                    await ShowErrorAlertAsync(results.ErrorMessage ?? "Unknown error in signin up");
+                }
+            }
+            catch (System.Exception ex)
+            {
+                await ShowErrorAlertAsync(ex.Message);
+            }
+            finally
+            {
+                IsBusy = false;
+            }
+        }
     }
 }

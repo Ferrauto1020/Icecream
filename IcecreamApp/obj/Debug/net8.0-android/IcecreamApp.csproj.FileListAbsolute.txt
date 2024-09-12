@@ -1070,3 +1070,10 @@ F:\Giuseppe\lavori maui\Icecream\IcecreamApp\obj\Debug\net8.0-android\stamp\_Con
 F:\Giuseppe\lavori maui\Icecream\IcecreamApp\obj\Debug\net8.0-android\stamp\_GenerateJavaStubs.stamp
 F:\Giuseppe\lavori maui\Icecream\IcecreamApp\obj\Debug\net8.0-android\stamp\_GeneratePackageManagerJava.stamp
 F:\Giuseppe\lavori maui\Icecream\IcecreamApp\obj\Debug\net8.0-android\stamp\_ResolveLibraryProjectImports.stamp
+F:\Giuseppe\lavori maui\Icecream\IcecreamApp\obj\Debug\net8.0-android\android\assets\Microsoft.Extensions.Configuration.Binder.dll
+F:\Giuseppe\lavori maui\Icecream\IcecreamApp\obj\Debug\net8.0-android\android\assets\Microsoft.Extensions.Diagnostics.Abstractions.dll
+F:\Giuseppe\lavori maui\Icecream\IcecreamApp\obj\Debug\net8.0-android\android\assets\Microsoft.Extensions.Diagnostics.dll
+F:\Giuseppe\lavori maui\Icecream\IcecreamApp\obj\Debug\net8.0-android\android\assets\Microsoft.Extensions.Http.dll
+F:\Giuseppe\lavori maui\Icecream\IcecreamApp\obj\Debug\net8.0-android\android\assets\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+F:\Giuseppe\lavori maui\Icecream\IcecreamApp\obj\Debug\net8.0-android\android\assets\Refit.dll
+F:\Giuseppe\lavori maui\Icecream\IcecreamApp\obj\Debug\net8.0-android\android\assets\Refit.HttpClientFactory.dll
