@@ -12,4 +12,5 @@ namespace IcecreamApp.Services
         Task<ResultWithDataDto<AuthResponseDto>> SigninAsync(SigninRequestDto dto);
     
     }
+    
 }

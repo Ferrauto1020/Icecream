@@ -14,8 +14,15 @@ namespace IcecreamApp.Api.Services
 
             app.MapPost("/api/signin", async (SigninRequestDto dto, AuthServices authService) =>
             {
-               var result =await authService.SigninAsync(dto);
-               return  TypedResults.Ok(result);
+                var result = await authService.SigninAsync(dto);
+                return TypedResults.Ok(result);
+            });
+
+            app.MapGet("/api/icecreams",
+            async (IcecreamServices icecreamService) =>
+            {
+                var result = await icecreamService.GetIcecreamsAsync();
+                return TypedResults.Ok(result);
             });
 
             return app;

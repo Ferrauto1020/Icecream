@@ -29,6 +29,7 @@ builder.Services
         .AddTransient<TokenServices>()
         .AddTransient<PasswordServices>()
         .AddTransient<AuthServices>()
+        .AddTransient<IcecreamServices>()
         ;
 
 

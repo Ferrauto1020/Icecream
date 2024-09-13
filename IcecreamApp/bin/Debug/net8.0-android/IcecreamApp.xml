@@ -39,6 +39,15 @@
         <member name="P:IcecreamApp.ViewModels.BaseViewModel.IsBusy">
             <inheritdoc cref="F:IcecreamApp.ViewModels.BaseViewModel._isBusy"/>
         </member>
+        <member name="T:IcecreamApp.ViewModels.HomeViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="P:IcecreamApp.ViewModels.HomeViewModel.Icecreams">
+            <inheritdoc cref="F:IcecreamApp.ViewModels.HomeViewModel._icecreams"/>
+        </member>
+        <member name="P:IcecreamApp.ViewModels.HomeViewModel.UserName">
+            <inheritdoc cref="F:IcecreamApp.ViewModels.HomeViewModel._userName"/>
+        </member>
         <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Button.TextColorTo(Microsoft.Maui.Controls.Button,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
             <summary>
             Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
@@ -180,6 +189,12 @@
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsBusy">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsBusy" generated properties.</summary>
         </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Icecreams">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Icecreams" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.UserName">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "UserName" generated properties.</summary>
+        </member>
         <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
             <summary>
             A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
@@ -207,6 +222,12 @@
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsBusy">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsBusy" generated properties.</summary>
         </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Icecreams">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Icecreams" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.UserName">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "UserName" generated properties.</summary>
+        </member>
         <member name="T:Refit.Implementation.Generated">
             <inheritdoc />
         </member>
@@ -229,6 +250,21 @@
             <inheritdoc />
         </member>
         <member name="M:Refit.Implementation.Generated.IcecreamAppServicesIAuthApi.IcecreamApp#Services#IAuthApi#SigninAsync(IcecreamApp.Shared.Dtos.SigninRequestDto)">
+            <inheritdoc />
+        </member>
+        <member name="T:Refit.Implementation.Generated.IcecreamAppServicesIIcecreamApi">
+            <inheritdoc />
+        </member>
+        <member name="P:Refit.Implementation.Generated.IcecreamAppServicesIIcecreamApi.Client">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.IcecreamAppServicesIIcecreamApi.#ctor(System.Net.Http.HttpClient,Refit.IRequestBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.IcecreamAppServicesIIcecreamApi.GetIcecreamsAsync">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.IcecreamAppServicesIIcecreamApi.IcecreamApp#Services#IIcecreamApi#GetIcecreamsAsync">
             <inheritdoc />
         </member>
     </members>

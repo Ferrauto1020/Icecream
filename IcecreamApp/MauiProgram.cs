@@ -36,6 +36,8 @@ public static class MauiProgram
 
 		builder.Services.AddSingleton<AuthService>();
 		builder.Services.AddTransient<OnboardingPage>();
+		builder.Services.AddSingleton<HomeViewModel>()
+						.AddSingleton<HomePage>();
 
 		ConfigureRefit(builder.Services);
 		return builder.Build();
@@ -60,18 +62,25 @@ public static class MauiProgram
 		};
 
 		services.AddRefitClient<IAuthApi>(refitSettings)
-		.ConfigureHttpClient(httpClient =>
+		.ConfigureHttpClient(SetHttpClient);
+
+		services.AddRefitClient<IIcecreamApi>(refitSettings)
+		.ConfigureHttpClient(SetHttpClient);
+
+		static void SetHttpClient(HttpClient httpClient)
 		{
 			var baseUrl = DeviceInfo.Platform == DevicePlatform.Android
 			? "http://10.0.2.2:5160"
 			: "http://localhost:5160";
 			httpClient.BaseAddress = new Uri(baseUrl);
 
-			 httpClient.DefaultRequestHeaders.Add("Accept", "application/json");
+			httpClient.DefaultRequestHeaders.Add("Accept", "application/json");
 
-            Console.WriteLine($"HttpClient BaseAddress: {httpClient.BaseAddress}");
-		});
+			Console.WriteLine($"HttpClient BaseAddress: {httpClient.BaseAddress}");
+		};
 	}
 
-
 }
+
+
+
