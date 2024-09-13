@@ -61,9 +61,6 @@
     <AppxPackagedFile Include="F:\Giuseppe\lavori maui\Icecream\IcecreamApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Semibold.ttf">
       <PackagePath>OpenSans-Semibold.ttf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="F:\Giuseppe\lavori maui\Icecream\IcecreamApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\log_out.scale-100.png">
-      <PackagePath>log_out.scale-100.png</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Giuseppe\lavori maui\Icecream\IcecreamApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
     </AppxPackagedFile>
@@ -78,6 +75,33 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Giuseppe\lavori maui\Icecream\IcecreamApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Giuseppe\lavori maui\Icecream\IcecreamApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\log_out.scale-100.png">
+      <PackagePath>log_out.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Giuseppe\lavori maui\Icecream\IcecreamApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\minus.scale-100.png">
+      <PackagePath>minus.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Giuseppe\lavori maui\Icecream\IcecreamApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\cross.scale-100.png">
+      <PackagePath>cross.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Giuseppe\lavori maui\Icecream\IcecreamApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ice_cream.scale-100.png">
+      <PackagePath>ice_cream.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Giuseppe\lavori maui\Icecream\IcecreamApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\right.scale-100.png">
+      <PackagePath>right.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Giuseppe\lavori maui\Icecream\IcecreamApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\cart.scale-100.png">
+      <PackagePath>cart.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Giuseppe\lavori maui\Icecream\IcecreamApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\trash.scale-100.png">
+      <PackagePath>trash.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Giuseppe\lavori maui\Icecream\IcecreamApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\plus.scale-100.png">
+      <PackagePath>plus.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Giuseppe\lavori maui\Icecream\IcecreamApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\user.scale-100.png">
+      <PackagePath>user.scale-100.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Giuseppe\lavori maui\Icecream\IcecreamApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\close.scale-100.png">
       <PackagePath>close.scale-100.png</PackagePath>
@@ -220,32 +244,8 @@
     <AppxPackagedFile Include="F:\Giuseppe\lavori maui\Icecream\IcecreamApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="F:\Giuseppe\lavori maui\Icecream\IcecreamApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\user.scale-100.png">
-      <PackagePath>user.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="F:\Giuseppe\lavori maui\Icecream\IcecreamApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\minus.scale-100.png">
-      <PackagePath>minus.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="F:\Giuseppe\lavori maui\Icecream\IcecreamApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ice_cream.scale-100.png">
-      <PackagePath>ice_cream.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="F:\Giuseppe\lavori maui\Icecream\IcecreamApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\cross.scale-100.png">
-      <PackagePath>cross.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="F:\Giuseppe\lavori maui\Icecream\IcecreamApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\trash.scale-100.png">
-      <PackagePath>trash.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="F:\Giuseppe\lavori maui\Icecream\IcecreamApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\right.scale-100.png">
-      <PackagePath>right.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="F:\Giuseppe\lavori maui\Icecream\IcecreamApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\plus.scale-100.png">
-      <PackagePath>plus.scale-100.png</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Giuseppe\lavori maui\Icecream\IcecreamApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\home.scale-100.png">
       <PackagePath>home.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="F:\Giuseppe\lavori maui\Icecream\IcecreamApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\cart.scale-100.png">
-      <PackagePath>cart.scale-100.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Giuseppe\lavori maui\Icecream\IcecreamApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\IcecreamApp.deps.json">
       <PackagePath>IcecreamApp.deps.json</PackagePath>
@@ -271,11 +271,23 @@
     <AppxPackagedFile Include="C:\Users\giuseppe\.nuget\packages\microsoft.extensions.configuration.abstractions\8.0.0\lib\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll">
       <PackagePath>Microsoft.Extensions.Configuration.Abstractions.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\giuseppe\.nuget\packages\microsoft.extensions.configuration.binder\8.0.0\lib\net8.0\Microsoft.Extensions.Configuration.Binder.dll">
+      <PackagePath>Microsoft.Extensions.Configuration.Binder.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giuseppe\.nuget\packages\microsoft.extensions.dependencyinjection\8.0.0\lib\net8.0\Microsoft.Extensions.DependencyInjection.dll">
       <PackagePath>Microsoft.Extensions.DependencyInjection.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giuseppe\.nuget\packages\microsoft.extensions.dependencyinjection.abstractions\8.0.0\lib\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll">
       <PackagePath>Microsoft.Extensions.DependencyInjection.Abstractions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\giuseppe\.nuget\packages\microsoft.extensions.diagnostics\8.0.0\lib\net8.0\Microsoft.Extensions.Diagnostics.dll">
+      <PackagePath>Microsoft.Extensions.Diagnostics.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\giuseppe\.nuget\packages\microsoft.extensions.diagnostics.abstractions\8.0.0\lib\net8.0\Microsoft.Extensions.Diagnostics.Abstractions.dll">
+      <PackagePath>Microsoft.Extensions.Diagnostics.Abstractions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\giuseppe\.nuget\packages\microsoft.extensions.http\8.0.0\lib\net8.0\Microsoft.Extensions.Http.dll">
+      <PackagePath>Microsoft.Extensions.Http.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giuseppe\.nuget\packages\microsoft.extensions.logging\8.0.0\lib\net8.0\Microsoft.Extensions.Logging.dll">
       <PackagePath>Microsoft.Extensions.Logging.dll</PackagePath>
@@ -288,6 +300,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giuseppe\.nuget\packages\microsoft.extensions.options\8.0.0\lib\net8.0\Microsoft.Extensions.Options.dll">
       <PackagePath>Microsoft.Extensions.Options.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\giuseppe\.nuget\packages\microsoft.extensions.options.configurationextensions\8.0.0\lib\net8.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll">
+      <PackagePath>Microsoft.Extensions.Options.ConfigurationExtensions.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giuseppe\.nuget\packages\microsoft.extensions.primitives\8.0.0\lib\net8.0\Microsoft.Extensions.Primitives.dll">
       <PackagePath>Microsoft.Extensions.Primitives.dll</PackagePath>
@@ -360,6 +375,12 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giuseppe\.nuget\packages\microsoft.windowsappsdk\1.5.240607001\lib\net6.0-windows10.0.18362.0\Microsoft.WindowsAppRuntime.Bootstrap.Net.dll">
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.Net.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\giuseppe\.nuget\packages\refit\7.1.2\lib\net8.0\Refit.dll">
+      <PackagePath>Refit.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\giuseppe\.nuget\packages\refit.httpclientfactory\7.1.2\lib\net8.0\Refit.HttpClientFactory.dll">
+      <PackagePath>Refit.HttpClientFactory.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giuseppe\.nuget\packages\system.speech\8.0.0\runtimes\win\lib\net8.0\System.Speech.dll">
       <PackagePath>System.Speech.dll</PackagePath>

@@ -30,12 +30,6 @@ public static class MauiProgram
 		builder.Logging.AddDebug();
 #endif
 
-		/* 
-						builder.Services
-						.AddSingleton<HomePage>()
-						.AddSingleton<SigninPage>()
-						.AddSingleton<SignupPage>(); 
-		 */
 		builder.Services.AddTransient<AuthViewModel>()
 						.AddTransient<SigninPage>()
 						.AddTransient<SignupPage>();
@@ -66,9 +60,13 @@ public static class MauiProgram
 		.ConfigureHttpClient(httpClient =>
 		{
 			var baseUrl = DeviceInfo.Platform == DevicePlatform.Android
-			? "https://10.0.0.2.2:7263"
-			: "https://localhost:7263";
+			? "http://10.0.2.2:5160"
+			: "http://localhost:5160";
 			httpClient.BaseAddress = new Uri(baseUrl);
+
+			 httpClient.DefaultRequestHeaders.Add("Accept", "application/json");
+
+            Console.WriteLine($"HttpClient BaseAddress: {httpClient.BaseAddress}");
 		});
 	}
 

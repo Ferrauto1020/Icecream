@@ -36,6 +36,9 @@
             <Button Text="Signup"
                     IsEnabled="{Binding CanSignup}"
                     Command="{Binding SignupCommand}"/>
+                    <Button Text="TODELETEBUTTON"
+                     Command="{Binding TestApiCommand}"
+                     />
         </VerticalStackLayout>
 
         <ActivityIndicator HorizontalOptions="Center"
