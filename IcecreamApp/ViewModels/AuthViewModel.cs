@@ -44,7 +44,7 @@ namespace IcecreamApp.ViewModels
         {
             try
             {
-                var dummyTest = new SignupRequestDto(Name, Email, Password, Address);
+                var user = new SignupRequestDto(Name, Email, Password, Address);
                 // Crea il DTO di test
                 //var dummyTest = new SignupRequestDto("TestName", "testemail@mail.com", "TestPassword", "TestAddress");
 
@@ -56,7 +56,7 @@ namespace IcecreamApp.ViewModels
                     // Aggiungi eventuali header necessari
                     client.DefaultRequestHeaders.Add("Accept", "application/json");
 
-                    var response = await client.PostAsJsonAsync("/api/signup", dummyTest);
+                    var response = await client.PostAsJsonAsync("/api/signup", user);
 
 
                     var responseContent = await response.Content.ReadAsStringAsync();
@@ -67,7 +67,55 @@ namespace IcecreamApp.ViewModels
 
                     if (response.IsSuccessStatusCode)
                     {
-                        await ShowAlertAsync("Test API call was successful!");
+                        await ShowAlertAsync("Thank for the signup!");
+                        await GoToAsync($"//{nameof(HomePage)}", animate: true);
+                    }
+                    else
+                    {
+                        await ShowErrorAlertAsync($"something went wrong: {response.StatusCode}");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Gestisci eventuali eccezioni
+                Console.WriteLine($"Exception: {ex.Message}");
+                await ShowErrorAlertAsync("An error occurred during the test API call.");
+            }
+        }
+
+
+
+
+     [RelayCommand]
+        public async Task SigninAsync()
+        {
+            try
+            {
+                var user = new SigninRequestDto( Email, Password);
+                // Crea il DTO di test
+                //var dummyTest = new SignupRequestDto("TestName", "testemail@mail.com", "TestPassword", "TestAddress");
+
+                using (var client = new HttpClient())
+                {
+                    // Imposta l'indirizzo base dell'API
+                    client.BaseAddress = new Uri("http://10.0.2.2:5160"); // o http://localhost:5160 su altre piattaforme
+
+                    // Aggiungi eventuali header necessari
+                    client.DefaultRequestHeaders.Add("Accept", "application/json");
+
+                    var response = await client.PostAsJsonAsync("/api/signin", user);
+
+
+                    var responseContent = await response.Content.ReadAsStringAsync();
+
+
+                    Console.WriteLine($"Status Code: {response.StatusCode}");
+                    Console.WriteLine($"Response Content: {responseContent}");
+
+                    if (response.IsSuccessStatusCode)
+                    {
+                        await ShowAlertAsync("Welcome back!");
                         await GoToAsync($"//{nameof(HomePage)}", animate: true);
                     }
                     else
@@ -86,7 +134,7 @@ namespace IcecreamApp.ViewModels
 
 
 
-
+/*
         [RelayCommand]
         private async Task SigninAsync()
         {
@@ -119,7 +167,7 @@ namespace IcecreamApp.ViewModels
             }
         }
 
-        /*         [RelayCommand]
+                [RelayCommand]
                 private async Task SignupAsync()
                 {
                     IsBusy = true;
