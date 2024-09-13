@@ -1,6 +1,8 @@
 
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using System.Net.Http.Json;
+
 using System.Text;
 
 using IcecreamApp.Pages;
@@ -9,10 +11,9 @@ using IcecreamApp.Shared.Dtos;
 
 namespace IcecreamApp.ViewModels
 {
-    public partial class AuthViewModel(IAuthApi authApi, TestAPi testAPi)  : BaseViewModel
+    public partial class AuthViewModel(IAuthApi authApi) : BaseViewModel
     {
         private readonly IAuthApi _authApi = authApi;
-        private readonly TestAPi _testAPi = testAPi;
 
 
 
@@ -39,46 +40,54 @@ namespace IcecreamApp.ViewModels
         !string.IsNullOrWhiteSpace(Address);
 
         [RelayCommand]
-        private async Task SignupAsync()
+        public async Task SignupAsync()
         {
-            IsBusy = true;
             try
             {
-                var signupDto = new SignupRequestDto(Name, Email, Password, Address);
-                //make Api call
-            Console.WriteLine();
+                var dummyTest = new SignupRequestDto(Name, Email, Password, Address);
+                // Crea il DTO di test
+                //var dummyTest = new SignupRequestDto("TestName", "testemail@mail.com", "TestPassword", "TestAddress");
 
-                var results = await _testAPi.SignupAsync(signupDto);
-            Console.WriteLine(results);
-
-        /* 
-                Console.WriteLine($"API Response: Success={results.IsSuccess}, Token={results.Data?.Token}");
-
-                if (results.IsSuccess)
+                using (var client = new HttpClient())
                 {
+                    // Imposta l'indirizzo base dell'API
+                    client.BaseAddress = new Uri("http://10.0.2.2:5160"); // o http://localhost:5160 su altre piattaforme
 
-                    await ShowAlertAsync(results.Data.Token);
-                    await GoToAsync($"//{nameof(HomePage)}", animate: true);
-                    //navigate to homepage
-                }
-                else
-                {
-                    //
-                    await ShowErrorAlertAsync(results.ErrorMessage ?? "Unknown error in signin up");
-                }
+                    // Aggiungi eventuali header necessari
+                    client.DefaultRequestHeaders.Add("Accept", "application/json");
 
-         */        
+                    var response = await client.PostAsJsonAsync("/api/signup", dummyTest);
+
+
+                    var responseContent = await response.Content.ReadAsStringAsync();
+
+
+                    Console.WriteLine($"Status Code: {response.StatusCode}");
+                    Console.WriteLine($"Response Content: {responseContent}");
+
+                    if (response.IsSuccessStatusCode)
+                    {
+                        await ShowAlertAsync("Test API call was successful!");
+                        await GoToAsync($"//{nameof(HomePage)}", animate: true);
+                    }
+                    else
+                    {
+                        await ShowErrorAlertAsync($"Test API failed with status code: {response.StatusCode}");
+                    }
+                }
             }
-            catch (System.Exception ex)
+            catch (Exception ex)
             {
-                await ShowErrorAlertAsync(ex.Message);
-            }
-            finally
-            {
-                IsBusy = false;
+                // Gestisci eventuali eccezioni
+                Console.WriteLine($"Exception: {ex.Message}");
+                await ShowErrorAlertAsync("An error occurred during the test API call.");
             }
         }
 
+
+
+
+        [RelayCommand]
         private async Task SigninAsync()
         {
             IsBusy = true;
@@ -110,40 +119,52 @@ namespace IcecreamApp.ViewModels
             }
         }
 
-
-
-
-        [RelayCommand]
-        public static async Task TestApiAsync()
-        {
-            var dummyTest = new SignupRequestDto("Name", "Email@mail", "Password", "Address");
-
-            // Creare manualmente una stringa JSON
-            var jsonContent = $"{{\"name\":\"{dummyTest.Name}\",\"email\":\"{dummyTest.Email}\",\"password\":\"{dummyTest.Password}\",\"address\":\"{dummyTest.Address}\"}}";
-
-            var client = new HttpClient { BaseAddress = new Uri("http://10.0.2.2:5160") };
-            var content = new StringContent(jsonContent, Encoding.UTF8, "application/json");
-
-            try
-            {
-                Console.WriteLine(client.BaseAddress);
-                var response = await client.PostAsync("/api/signup", content);
-
-                if (response.IsSuccessStatusCode)
+        /*         [RelayCommand]
+                private async Task SignupAsync()
                 {
-                    var responseContent = await response.Content.ReadAsStringAsync();
-                    Console.WriteLine($"Response: {responseContent}");
+                    IsBusy = true;
+                    try
+                    {
+                        var signupDto = new SignupRequestDto(Name, Email, Password, Address);
+                        //make Api call
+                        Console.WriteLine(signupDto);
+                        try
+                        {
+                            var results = await _authApi.SignupAsync(signupDto); Console.WriteLine($"API Response: Success={results.IsSuccess}, Token={results.Data?.Token}");
+
+                            if (results.IsSuccess)
+                            {
+
+                                await ShowAlertAsync(results.Data.Token);
+                                await GoToAsync($"//{nameof(HomePage)}", animate: true);
+                                //navigate to homepage
+                            }
+                            else
+                            {
+                                //
+                                await ShowErrorAlertAsync(results.ErrorMessage ?? "Unknown error in signin up");
+                            }
+                        }
+                        catch (System.Exception e)
+                        {
+
+                            Console.WriteLine(e.Message);
+                        }
+
+
+                    }
+                    catch (System.Exception ex)
+                    {
+                        await ShowErrorAlertAsync(ex.Message);
+                    }
+                    finally
+                    {
+                        IsBusy = false;
+                    }
                 }
-                else
-                {
-                    Console.WriteLine($"Failed to call API. Status code: {response.StatusCode}");
-                }
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("sei dentro l'eccezione");
-                Console.WriteLine($"Exception: {ex.Message}");
-            }
-        }
+
+         */
+
+
     }
 }
