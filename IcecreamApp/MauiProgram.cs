@@ -34,6 +34,8 @@ public static class MauiProgram
 						.AddTransient<SigninPage>()
 						.AddTransient<SignupPage>();
 
+		builder.Services.AddTransient<AuthService>();
+
 		ConfigureRefit(builder.Services);
 		return builder.Build();
 	}

@@ -11,10 +11,10 @@ using IcecreamApp.Shared.Dtos;
 
 namespace IcecreamApp.ViewModels
 {
-    public partial class AuthViewModel(IAuthApi authApi) : BaseViewModel
+    public partial class AuthViewModel(IAuthApi authApi, AuthService authService) : BaseViewModel
     {
         private readonly IAuthApi _authApi = authApi;
-
+        private readonly AuthService _authService = authService;
 
 
         [ObservableProperty, NotifyPropertyChangedFor(nameof(CanSignup))]
@@ -67,7 +67,8 @@ namespace IcecreamApp.ViewModels
 
                     if (response.IsSuccessStatusCode)
                     {
-                        await ShowAlertAsync("Thank for the signup!");
+                        
+                      //  _authService.Signin(responseContent);
                         await GoToAsync($"//{nameof(HomePage)}", animate: true);
                     }
                     else
@@ -87,12 +88,55 @@ namespace IcecreamApp.ViewModels
 
 
 
+
+
+
+
+
      [RelayCommand]
+                private async Task SigninAsync()
+                {
+                    IsBusy = true;
+                    try
+                    {
+                        var signinDto = new SigninRequestDto(Email, Password);
+                        //make Api call
+                        var results = await _authApi.SigninAsync(signinDto);
+                        if (results.IsSuccess)
+                        {
+
+                        _authService.Signin(results.Data);
+                            await ShowAlertAsync(results.Data.User.Name);
+                            await GoToAsync($"//{nameof(HomePage)}", animate: true);
+                            //navigate to homepage
+                        }
+                        else
+                        {
+                            //
+                            await ShowErrorAlertAsync(results.ErrorMessage ?? "Unknown error in signin up");
+                        }
+                    }
+                    catch (System.Exception ex)
+                    {
+                        await ShowErrorAlertAsync(ex.Message);
+                    }
+                    finally
+                    {
+                        IsBusy = false;
+                    }
+                }
+
+        /*
+           
+
+
+
+        [RelayCommand]
         public async Task SigninAsync()
         {
             try
             {
-                var user = new SigninRequestDto( Email, Password);
+                var user = new SigninRequestDto(Email, Password);
                 // Crea il DTO di test
                 //var dummyTest = new SignupRequestDto("TestName", "testemail@mail.com", "TestPassword", "TestAddress");
 
@@ -115,6 +159,7 @@ namespace IcecreamApp.ViewModels
 
                     if (response.IsSuccessStatusCode)
                     {
+                       // _authService.Signin(responseContent);
                         await ShowAlertAsync("Welcome back!");
                         await GoToAsync($"//{nameof(HomePage)}", animate: true);
                     }
@@ -134,84 +179,64 @@ namespace IcecreamApp.ViewModels
 
 
 
-/*
-        [RelayCommand]
-        private async Task SigninAsync()
-        {
-            IsBusy = true;
-            try
-            {
-                var signinDto = new SigninRequestDto(Email, Password);
-                //make Api call
-                var results = await _authApi.SigninAsync(signinDto);
-                if (results.IsSuccess)
-                {
 
-                    await ShowAlertAsync(results.Data.User.Name);
-                    await GoToAsync($"//{nameof(HomePage)}", animate: true);
-                    //navigate to homepage
-                }
-                else
-                {
-                    //
-                    await ShowErrorAlertAsync(results.ErrorMessage ?? "Unknown error in signin up");
-                }
-            }
-            catch (System.Exception ex)
-            {
-                await ShowErrorAlertAsync(ex.Message);
-            }
-            finally
-            {
-                IsBusy = false;
-            }
-        }
 
-                [RelayCommand]
-                private async Task SignupAsync()
-                {
-                    IsBusy = true;
-                    try
-                    {
-                        var signupDto = new SignupRequestDto(Name, Email, Password, Address);
-                        //make Api call
-                        Console.WriteLine(signupDto);
-                        try
+
+
+
+
+
+
+
+
+
+
+
+                        [RelayCommand]
+                        private async Task SignupAsync()
                         {
-                            var results = await _authApi.SignupAsync(signupDto); Console.WriteLine($"API Response: Success={results.IsSuccess}, Token={results.Data?.Token}");
-
-                            if (results.IsSuccess)
+                            IsBusy = true;
+                            try
                             {
+                                var signupDto = new SignupRequestDto(Name, Email, Password, Address);
+                                //make Api call
+                                Console.WriteLine(signupDto);
+                                try
+                                {
+                                    var results = await _authApi.SignupAsync(signupDto); Console.WriteLine($"API Response: Success={results.IsSuccess}, Token={results.Data?.Token}");
 
-                                await ShowAlertAsync(results.Data.Token);
-                                await GoToAsync($"//{nameof(HomePage)}", animate: true);
-                                //navigate to homepage
+                                    if (results.IsSuccess)
+                                    {
+
+                                        await ShowAlertAsync(results.Data.Token);
+                                        await GoToAsync($"//{nameof(HomePage)}", animate: true);
+                                        //navigate to homepage
+                                    }
+                                    else
+                                    {
+                                        //
+                                        await ShowErrorAlertAsync(results.ErrorMessage ?? "Unknown error in signin up");
+                                    }
+                                }
+                                catch (System.Exception e)
+                                {
+
+                                    Console.WriteLine(e.Message);
+                                }
+
+
                             }
-                            else
+                            catch (System.Exception ex)
                             {
-                                //
-                                await ShowErrorAlertAsync(results.ErrorMessage ?? "Unknown error in signin up");
+                                await ShowErrorAlertAsync(ex.Message);
+                            }
+                            finally
+                            {
+                                IsBusy = false;
                             }
                         }
-                        catch (System.Exception e)
-                        {
 
-                            Console.WriteLine(e.Message);
-                        }
-
-
-                    }
-                    catch (System.Exception ex)
-                    {
-                        await ShowErrorAlertAsync(ex.Message);
-                    }
-                    finally
-                    {
-                        IsBusy = false;
-                    }
-                }
-
-         */
+                 */
 
 
     }
