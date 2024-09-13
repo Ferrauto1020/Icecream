@@ -15,7 +15,7 @@ namespace IcecreamApp.ViewModels
         protected async Task ShowErrorAlertAsync(string errorMesage) =>
     await Shell.Current.DisplayAlert("Error", errorMesage, "Ok");
         protected async Task ShowAlertAsync(string message) =>
-    await Shell.Current.DisplayAlert("Error", message, "Ok");
+    await Shell.Current.DisplayAlert("Hello", message, "Ok");
 
     }
 }
