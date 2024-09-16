@@ -39,7 +39,38 @@
         <member name="P:IcecreamApp.ViewModels.BaseViewModel.IsBusy">
             <inheritdoc cref="F:IcecreamApp.ViewModels.BaseViewModel._isBusy"/>
         </member>
+        <member name="T:IcecreamApp.ViewModels.DetailsViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:IcecreamApp.ViewModels.DetailsViewModel.Icecream">
+            <inheritdoc cref="F:IcecreamApp.ViewModels.DetailsViewModel._icecream"/>
+        </member>
+        <member name="P:IcecreamApp.ViewModels.DetailsViewModel.Quantity">
+            <inheritdoc cref="F:IcecreamApp.ViewModels.DetailsViewModel._quantity"/>
+        </member>
+        <member name="F:IcecreamApp.ViewModels.DetailsViewModel.increaseQuantityCommand">
+            <summary>The backing field for <see cref="P:IcecreamApp.ViewModels.DetailsViewModel.IncreaseQuantityCommand"/>.</summary>
+        </member>
+        <member name="P:IcecreamApp.ViewModels.DetailsViewModel.IncreaseQuantityCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:IcecreamApp.ViewModels.DetailsViewModel.IncreaseQuantity"/>.</summary>
+        </member>
+        <member name="F:IcecreamApp.ViewModels.DetailsViewModel.decreaseQuantityCommand">
+            <summary>The backing field for <see cref="P:IcecreamApp.ViewModels.DetailsViewModel.DecreaseQuantityCommand"/>.</summary>
+        </member>
+        <member name="P:IcecreamApp.ViewModels.DetailsViewModel.DecreaseQuantityCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:IcecreamApp.ViewModels.DetailsViewModel.DecreaseQuantity"/>.</summary>
+        </member>
+        <member name="F:IcecreamApp.ViewModels.DetailsViewModel.goBackCommand">
+            <summary>The backing field for <see cref="P:IcecreamApp.ViewModels.DetailsViewModel.GoBackCommand"/>.</summary>
+        </member>
+        <member name="P:IcecreamApp.ViewModels.DetailsViewModel.GoBackCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:IcecreamApp.ViewModels.DetailsViewModel.GoBackAsync"/>.</summary>
+        </member>
         <member name="T:IcecreamApp.ViewModels.HomeViewModel">
+            <inheritdoc/>
             <inheritdoc/>
         </member>
         <member name="P:IcecreamApp.ViewModels.HomeViewModel.Icecreams">
@@ -47,6 +78,12 @@
         </member>
         <member name="P:IcecreamApp.ViewModels.HomeViewModel.UserName">
             <inheritdoc cref="F:IcecreamApp.ViewModels.HomeViewModel._userName"/>
+        </member>
+        <member name="F:IcecreamApp.ViewModels.HomeViewModel.goToDetailsPageCommand">
+            <summary>The backing field for <see cref="P:IcecreamApp.ViewModels.HomeViewModel.GoToDetailsPageCommand"/>.</summary>
+        </member>
+        <member name="P:IcecreamApp.ViewModels.HomeViewModel.GoToDetailsPageCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:IcecreamApp.ViewModels.HomeViewModel.GoToDetailsPageAsync(IcecreamApp.Shared.Dtos.IcecreamDto)"/>.</summary>
         </member>
         <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Button.TextColorTo(Microsoft.Maui.Controls.Button,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
             <summary>
@@ -189,6 +226,12 @@
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsBusy">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsBusy" generated properties.</summary>
         </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Icecream">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Icecream" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Quantity">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Quantity" generated properties.</summary>
+        </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Icecreams">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Icecreams" generated properties.</summary>
         </member>
@@ -221,6 +264,12 @@
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsBusy">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsBusy" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Icecream">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Icecream" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Quantity">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Quantity" generated properties.</summary>
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Icecreams">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Icecreams" generated properties.</summary>

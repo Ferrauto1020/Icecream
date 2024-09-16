@@ -38,7 +38,8 @@ public static class MauiProgram
 		builder.Services.AddTransient<OnboardingPage>();
 		builder.Services.AddSingleton<HomeViewModel>()
 						.AddSingleton<HomePage>();
-
+		builder.Services.AddTransient<DetailsViewModel>()
+						.AddTransient<DetailsPage>();
 		ConfigureRefit(builder.Services);
 		return builder.Build();
 	}

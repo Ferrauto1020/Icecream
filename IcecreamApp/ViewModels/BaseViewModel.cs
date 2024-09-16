@@ -12,6 +12,13 @@ namespace IcecreamApp.ViewModels
         protected async Task GoToAsync(string url, bool animate = false)
         =>
             await Shell.Current.GoToAsync(url, animate);
+
+
+        protected async Task GoToAsync(string url, bool animate, IDictionary<string, object> parameters)
+        {
+            await Shell.Current.GoToAsync(url, animate, parameters);
+        }
+
         protected async Task ShowErrorAlertAsync(string errorMesage) =>
     await Shell.Current.DisplayAlert("Error", errorMesage, "Ok");
         protected async Task ShowAlertAsync(string message) =>

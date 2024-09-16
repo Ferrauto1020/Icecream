@@ -45,13 +45,17 @@
                                            FontAttributes="Bold"
                                            HorizontalTextAlignment="Center"/>
                                     <Label Grid.Row="2"
-                                            Text="{Binding Price,StringFormat='{0:C}'}"
-                                            FontSize="16"
-                                            Padding="5"
-                                            HorizontalOptions="End"
-                                            FontAttributes="Bold"
-                                            />
+                                           Text="{Binding Price,StringFormat='{0:C}'}"
+                                           FontSize="16"
+                                           Padding="5"
+                                           HorizontalOptions="End"
+                                           FontAttributes="Bold"/>
                                 </Grid>
+                                <Border.GestureRecognizers>
+                                    <TapGestureRecognizer
+                                        Command="{Binding Source={x:RelativeSource AncestorType={x:Type vm:HomeViewModel}},Path=GoToDetailsPageCommand}"
+                                        CommandParameter="{Binding .}"/>
+                                </Border.GestureRecognizers>
                             </Border>
                         </DataTemplate>
                     </CollectionView.ItemTemplate>
