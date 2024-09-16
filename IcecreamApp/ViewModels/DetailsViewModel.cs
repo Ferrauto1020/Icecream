@@ -74,7 +74,10 @@ namespace IcecreamApp.ViewModels
         [RelayCommand]
         private void AddToCart()
         {
-            var selectedOption = Options.FirstOrDefault(o => o.IsSelected) ?? Options[0];
+            var selectedOption = new IcecreamOption{
+Topping="none",
+Flavor="base"
+            };
             _cartViewModel.AddItemToCart(Icecream, Quantity, selectedOption.Flavor, selectedOption.Topping);
         }
 
