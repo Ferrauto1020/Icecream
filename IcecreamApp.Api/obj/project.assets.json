@@ -4366,11 +4366,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "f:\\Giuseppe\\lavori maui\\Icecream\\IcecreamApp.Api\\IcecreamApp.Api.csproj",
+      "projectUniqueName": "f:\\Giuseppe\\lavori maui\\github repo\\Icecream\\IcecreamApp.Api\\IcecreamApp.Api.csproj",
       "projectName": "IcecreamApp.Api",
-      "projectPath": "f:\\Giuseppe\\lavori maui\\Icecream\\IcecreamApp.Api\\IcecreamApp.Api.csproj",
+      "projectPath": "f:\\Giuseppe\\lavori maui\\github repo\\Icecream\\IcecreamApp.Api\\IcecreamApp.Api.csproj",
       "packagesPath": "C:\\Users\\giuseppe\\.nuget\\packages\\",
-      "outputPath": "f:\\Giuseppe\\lavori maui\\Icecream\\IcecreamApp.Api\\obj\\",
+      "outputPath": "f:\\Giuseppe\\lavori maui\\github repo\\Icecream\\IcecreamApp.Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\giuseppe\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -4386,8 +4386,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "f:\\Giuseppe\\lavori maui\\Icecream\\IcecreamApp.Shared\\IcecreamApp.Shared.csproj": {
-              "projectPath": "f:\\Giuseppe\\lavori maui\\Icecream\\IcecreamApp.Shared\\IcecreamApp.Shared.csproj"
+            "f:\\Giuseppe\\lavori maui\\github repo\\Icecream\\IcecreamApp.Shared\\IcecreamApp.Shared.csproj": {
+              "projectPath": "f:\\Giuseppe\\lavori maui\\github repo\\Icecream\\IcecreamApp.Shared\\IcecreamApp.Shared.csproj"
             }
           }
         }

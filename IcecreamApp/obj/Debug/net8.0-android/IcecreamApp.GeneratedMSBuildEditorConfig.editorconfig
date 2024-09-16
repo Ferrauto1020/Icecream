@@ -13,89 +13,89 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = IcecreamApp
-build_property.ProjectDir = F:\Giuseppe\lavori maui\Icecream\IcecreamApp\
+build_property.ProjectDir = F:\Giuseppe\lavori maui\github repo\Icecream\IcecreamApp\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 
-[F:/Giuseppe/lavori maui/Icecream/IcecreamApp/App.xaml]
+[F:/Giuseppe/lavori maui/github repo/Icecream/IcecreamApp/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = IcecreamApp.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[F:/Giuseppe/lavori maui/Icecream/IcecreamApp/AppShell.xaml]
+[F:/Giuseppe/lavori maui/github repo/Icecream/IcecreamApp/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = IcecreamApp.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[F:/Giuseppe/lavori maui/Icecream/IcecreamApp/Pages/CartPage.xaml]
+[F:/Giuseppe/lavori maui/github repo/Icecream/IcecreamApp/Pages/CartPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = IcecreamApp.Pages.CartPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Pages\CartPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\CartPage.xaml
 
-[F:/Giuseppe/lavori maui/Icecream/IcecreamApp/Pages/DetailsPage.xaml]
+[F:/Giuseppe/lavori maui/github repo/Icecream/IcecreamApp/Pages/DetailsPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = IcecreamApp.Pages.DetailsPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Pages\DetailsPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\DetailsPage.xaml
 
-[F:/Giuseppe/lavori maui/Icecream/IcecreamApp/Pages/HomePage.xaml]
+[F:/Giuseppe/lavori maui/github repo/Icecream/IcecreamApp/Pages/HomePage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = IcecreamApp.Pages.HomePage.xaml
 build_metadata.AdditionalFiles.TargetPath = Pages\HomePage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\HomePage.xaml
 
-[F:/Giuseppe/lavori maui/Icecream/IcecreamApp/Pages/MainPage.xaml]
+[F:/Giuseppe/lavori maui/github repo/Icecream/IcecreamApp/Pages/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = IcecreamApp.Pages.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Pages\MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\MainPage.xaml
 
-[F:/Giuseppe/lavori maui/Icecream/IcecreamApp/Pages/MyOrdersPage.xaml]
+[F:/Giuseppe/lavori maui/github repo/Icecream/IcecreamApp/Pages/MyOrdersPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = IcecreamApp.Pages.MyOrdersPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Pages\MyOrdersPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\MyOrdersPage.xaml
 
-[F:/Giuseppe/lavori maui/Icecream/IcecreamApp/Pages/OnboardingPage.xaml]
+[F:/Giuseppe/lavori maui/github repo/Icecream/IcecreamApp/Pages/OnboardingPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = IcecreamApp.Pages.OnboardingPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Pages\OnboardingPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\OnboardingPage.xaml
 
-[F:/Giuseppe/lavori maui/Icecream/IcecreamApp/Pages/OrderDetailsPage.xaml]
+[F:/Giuseppe/lavori maui/github repo/Icecream/IcecreamApp/Pages/OrderDetailsPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = IcecreamApp.Pages.OrderDetailsPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Pages\OrderDetailsPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\OrderDetailsPage.xaml
 
-[F:/Giuseppe/lavori maui/Icecream/IcecreamApp/Pages/ProfilePage.xaml]
+[F:/Giuseppe/lavori maui/github repo/Icecream/IcecreamApp/Pages/ProfilePage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = IcecreamApp.Pages.ProfilePage.xaml
 build_metadata.AdditionalFiles.TargetPath = Pages\ProfilePage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\ProfilePage.xaml
 
-[F:/Giuseppe/lavori maui/Icecream/IcecreamApp/Pages/SigninPage.xaml]
+[F:/Giuseppe/lavori maui/github repo/Icecream/IcecreamApp/Pages/SigninPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = IcecreamApp.Pages.SigninPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Pages\SigninPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\SigninPage.xaml
 
-[F:/Giuseppe/lavori maui/Icecream/IcecreamApp/Pages/SignupPage.xaml]
+[F:/Giuseppe/lavori maui/github repo/Icecream/IcecreamApp/Pages/SignupPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = IcecreamApp.Pages.SignupPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Pages\SignupPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\SignupPage.xaml
 
-[F:/Giuseppe/lavori maui/Icecream/IcecreamApp/Resources/Styles/Colors.xaml]
+[F:/Giuseppe/lavori maui/github repo/Icecream/IcecreamApp/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = IcecreamApp.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[F:/Giuseppe/lavori maui/Icecream/IcecreamApp/Resources/Styles/Styles.xaml]
+[F:/Giuseppe/lavori maui/github repo/Icecream/IcecreamApp/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = IcecreamApp.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml

@@ -10,3 +10,15 @@ F:\Giuseppe\lavori maui\Icecream\IcecreamApp.Shared\obj\Debug\net8.0\IcecreamApp
 F:\Giuseppe\lavori maui\Icecream\IcecreamApp.Shared\obj\Debug\net8.0\refint\IcecreamApp.Shared.dll
 F:\Giuseppe\lavori maui\Icecream\IcecreamApp.Shared\obj\Debug\net8.0\IcecreamApp.Shared.pdb
 F:\Giuseppe\lavori maui\Icecream\IcecreamApp.Shared\obj\Debug\net8.0\ref\IcecreamApp.Shared.dll
+F:\Giuseppe\lavori maui\github repo\Icecream\IcecreamApp.Shared\bin\Debug\net8.0\IcecreamApp.Shared.deps.json
+F:\Giuseppe\lavori maui\github repo\Icecream\IcecreamApp.Shared\bin\Debug\net8.0\IcecreamApp.Shared.dll
+F:\Giuseppe\lavori maui\github repo\Icecream\IcecreamApp.Shared\bin\Debug\net8.0\IcecreamApp.Shared.pdb
+F:\Giuseppe\lavori maui\github repo\Icecream\IcecreamApp.Shared\obj\Debug\net8.0\IcecreamApp.Shared.GeneratedMSBuildEditorConfig.editorconfig
+F:\Giuseppe\lavori maui\github repo\Icecream\IcecreamApp.Shared\obj\Debug\net8.0\IcecreamApp.Shared.AssemblyInfoInputs.cache
+F:\Giuseppe\lavori maui\github repo\Icecream\IcecreamApp.Shared\obj\Debug\net8.0\IcecreamApp.Shared.AssemblyInfo.cs
+F:\Giuseppe\lavori maui\github repo\Icecream\IcecreamApp.Shared\obj\Debug\net8.0\IcecreamApp.Shared.csproj.CoreCompileInputs.cache
+F:\Giuseppe\lavori maui\github repo\Icecream\IcecreamApp.Shared\obj\Debug\net8.0\IcecreamApp.Shared.sourcelink.json
+F:\Giuseppe\lavori maui\github repo\Icecream\IcecreamApp.Shared\obj\Debug\net8.0\IcecreamApp.Shared.dll
+F:\Giuseppe\lavori maui\github repo\Icecream\IcecreamApp.Shared\obj\Debug\net8.0\refint\IcecreamApp.Shared.dll
+F:\Giuseppe\lavori maui\github repo\Icecream\IcecreamApp.Shared\obj\Debug\net8.0\IcecreamApp.Shared.pdb
+F:\Giuseppe\lavori maui\github repo\Icecream\IcecreamApp.Shared\obj\Debug\net8.0\ref\IcecreamApp.Shared.dll

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Giuseppe\\lavori maui\\Icecream\\IcecreamApp.Shared\\IcecreamApp.Shared.csproj": {}
+    "F:\\Giuseppe\\lavori maui\\github repo\\Icecream\\IcecreamApp.Shared\\IcecreamApp.Shared.csproj": {}
   },
   "projects": {
-    "F:\\Giuseppe\\lavori maui\\Icecream\\IcecreamApp.Shared\\IcecreamApp.Shared.csproj": {
+    "F:\\Giuseppe\\lavori maui\\github repo\\Icecream\\IcecreamApp.Shared\\IcecreamApp.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Giuseppe\\lavori maui\\Icecream\\IcecreamApp.Shared\\IcecreamApp.Shared.csproj",
+        "projectUniqueName": "F:\\Giuseppe\\lavori maui\\github repo\\Icecream\\IcecreamApp.Shared\\IcecreamApp.Shared.csproj",
         "projectName": "IcecreamApp.Shared",
-        "projectPath": "F:\\Giuseppe\\lavori maui\\Icecream\\IcecreamApp.Shared\\IcecreamApp.Shared.csproj",
+        "projectPath": "F:\\Giuseppe\\lavori maui\\github repo\\Icecream\\IcecreamApp.Shared\\IcecreamApp.Shared.csproj",
         "packagesPath": "C:\\Users\\giuseppe\\.nuget\\packages\\",
-        "outputPath": "F:\\Giuseppe\\lavori maui\\Icecream\\IcecreamApp.Shared\\obj\\",
+        "outputPath": "F:\\Giuseppe\\lavori maui\\github repo\\Icecream\\IcecreamApp.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\giuseppe\\AppData\\Roaming\\NuGet\\NuGet.Config"

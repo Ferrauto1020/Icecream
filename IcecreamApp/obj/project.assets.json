@@ -42364,11 +42364,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Giuseppe\\lavori maui\\Icecream\\IcecreamApp\\IcecreamApp.csproj",
+      "projectUniqueName": "F:\\Giuseppe\\lavori maui\\github repo\\Icecream\\IcecreamApp\\IcecreamApp.csproj",
       "projectName": "IcecreamApp",
-      "projectPath": "F:\\Giuseppe\\lavori maui\\Icecream\\IcecreamApp\\IcecreamApp.csproj",
+      "projectPath": "F:\\Giuseppe\\lavori maui\\github repo\\Icecream\\IcecreamApp\\IcecreamApp.csproj",
       "packagesPath": "C:\\Users\\giuseppe\\.nuget\\packages\\",
-      "outputPath": "F:\\Giuseppe\\lavori maui\\Icecream\\IcecreamApp\\obj\\",
+      "outputPath": "F:\\Giuseppe\\lavori maui\\github repo\\Icecream\\IcecreamApp\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "configFilePaths": [
@@ -42388,32 +42388,32 @@
         "net8.0-android34.0": {
           "targetAlias": "net8.0-android",
           "projectReferences": {
-            "F:\\Giuseppe\\lavori maui\\Icecream\\IcecreamApp.Shared\\IcecreamApp.Shared.csproj": {
-              "projectPath": "F:\\Giuseppe\\lavori maui\\Icecream\\IcecreamApp.Shared\\IcecreamApp.Shared.csproj"
+            "F:\\Giuseppe\\lavori maui\\github repo\\Icecream\\IcecreamApp.Shared\\IcecreamApp.Shared.csproj": {
+              "projectPath": "F:\\Giuseppe\\lavori maui\\github repo\\Icecream\\IcecreamApp.Shared\\IcecreamApp.Shared.csproj"
             }
           }
         },
         "net8.0-ios17.5": {
           "targetAlias": "net8.0-ios",
           "projectReferences": {
-            "F:\\Giuseppe\\lavori maui\\Icecream\\IcecreamApp.Shared\\IcecreamApp.Shared.csproj": {
-              "projectPath": "F:\\Giuseppe\\lavori maui\\Icecream\\IcecreamApp.Shared\\IcecreamApp.Shared.csproj"
+            "F:\\Giuseppe\\lavori maui\\github repo\\Icecream\\IcecreamApp.Shared\\IcecreamApp.Shared.csproj": {
+              "projectPath": "F:\\Giuseppe\\lavori maui\\github repo\\Icecream\\IcecreamApp.Shared\\IcecreamApp.Shared.csproj"
             }
           }
         },
         "net8.0-maccatalyst17.5": {
           "targetAlias": "net8.0-maccatalyst",
           "projectReferences": {
-            "F:\\Giuseppe\\lavori maui\\Icecream\\IcecreamApp.Shared\\IcecreamApp.Shared.csproj": {
-              "projectPath": "F:\\Giuseppe\\lavori maui\\Icecream\\IcecreamApp.Shared\\IcecreamApp.Shared.csproj"
+            "F:\\Giuseppe\\lavori maui\\github repo\\Icecream\\IcecreamApp.Shared\\IcecreamApp.Shared.csproj": {
+              "projectPath": "F:\\Giuseppe\\lavori maui\\github repo\\Icecream\\IcecreamApp.Shared\\IcecreamApp.Shared.csproj"
             }
           }
         },
         "net8.0-windows10.0.19041": {
           "targetAlias": "net8.0-windows10.0.19041.0",
           "projectReferences": {
-            "F:\\Giuseppe\\lavori maui\\Icecream\\IcecreamApp.Shared\\IcecreamApp.Shared.csproj": {
-              "projectPath": "F:\\Giuseppe\\lavori maui\\Icecream\\IcecreamApp.Shared\\IcecreamApp.Shared.csproj"
+            "F:\\Giuseppe\\lavori maui\\github repo\\Icecream\\IcecreamApp.Shared\\IcecreamApp.Shared.csproj": {
+              "projectPath": "F:\\Giuseppe\\lavori maui\\github repo\\Icecream\\IcecreamApp.Shared\\IcecreamApp.Shared.csproj"
             }
           }
         }

@@ -40,6 +40,7 @@ public static class MauiProgram
 						.AddSingleton<HomePage>();
 		builder.Services.AddTransient<DetailsViewModel>()
 						.AddTransient<DetailsPage>();
+		builder.Services.AddSingleton<CartViewModel>();
 		ConfigureRefit(builder.Services);
 		return builder.Build();
 	}

@@ -16,6 +16,20 @@ namespace IcecreamApp.ViewModels
         private IcecreamOption[] _options = [];
 
 
+
+
+        private readonly CartViewModel _cartViewModel;
+
+        public DetailsViewModel(CartViewModel cartViewModel)
+        {
+            _cartViewModel = cartViewModel;
+        }
+
+
+
+
+
+
         partial void OnIcecreamChanged(IcecreamDto? value)
         {
             Options = [];
@@ -52,5 +66,18 @@ namespace IcecreamApp.ViewModels
             } ).ToArray()];
             newOption.IsSelected = newSelected;
         }
+
+
+
+
+
+        [RelayCommand]
+        private void AddToCart()
+        {
+            var selectedOption = Options.FirstOrDefault(o => o.IsSelected) ?? Options[0];
+            _cartViewModel.AddItemToCart(Icecream, Quantity, selectedOption.Flavor, selectedOption.Topping);
+        }
+
+
     }
 }

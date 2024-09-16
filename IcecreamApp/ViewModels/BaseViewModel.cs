@@ -1,4 +1,5 @@
 using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Maui.Alerts;
 using IcecreamApp.Pages;
 using IcecreamApp.Shared.Dtos;
 namespace IcecreamApp.ViewModels
@@ -24,5 +25,7 @@ namespace IcecreamApp.ViewModels
         protected async Task ShowAlertAsync(string message) =>
     await Shell.Current.DisplayAlert("Hello", message, "Ok");
 
+        protected async Task ShowToastAsync(string message)
+        => await Toast.Make(message).Show();
     }
 }
