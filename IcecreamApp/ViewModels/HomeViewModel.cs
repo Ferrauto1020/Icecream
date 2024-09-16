@@ -24,7 +24,6 @@ namespace IcecreamApp.ViewModels
             {
                 _isInitialize = true;
                 Icecreams = await _icecreamApi.GetIcecreamsAsync();
-
             }
             catch (System.Exception ex)
             {

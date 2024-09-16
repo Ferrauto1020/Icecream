@@ -54,140 +54,140 @@ namespace IcecreamApp.Api.Migrations
                         new
                         {
                             Id = 1,
-                            Image = "https://github.com/Abhayprince/Images-Icons/blob/main/Icecreams/hq/ic_0.jpg",
+                            Image = "https://raw.githubusercontent.com/Abhayprince/Images-Icons/main/Icecreams/small/ic_0.jpg",
                             Name = "Vanilla",
                             Price = 6.2000000000000002
                         },
                         new
                         {
                             Id = 2,
-                            Image = "https://github.com/Abhayprince/Images-Icons/blob/main/Icecreams/hq/ic_1.jpg",
+                            Image = "https://raw.githubusercontent.com/Abhayprince/Images-Icons/main/Icecreams/small/ic_1.jpg",
                             Name = "Chocolate",
                             Price = 3.5899999999999999
                         },
                         new
                         {
                             Id = 3,
-                            Image = "https://github.com/Abhayprince/Images-Icons/blob/main/Icecreams/hq/ic_2.jpg",
+                            Image = "https://raw.githubusercontent.com/Abhayprince/Images-Icons/main/Icecreams/small/ic_2.jpg",
                             Name = "Strawberry",
                             Price = 12.99
                         },
                         new
                         {
                             Id = 4,
-                            Image = "https://github.com/Abhayprince/Images-Icons/blob/main/Icecreams/hq/ic_3.jpg",
+                            Image = "https://raw.githubusercontent.com/Abhayprince/Images-Icons/main/Icecreams/small/ic_3.jpg",
                             Name = "Mint",
                             Price = 7.9900000000000002
                         },
                         new
                         {
                             Id = 5,
-                            Image = "https://github.com/Abhayprince/Images-Icons/blob/main/Icecreams/hq/ic_4.jpg",
+                            Image = "https://raw.githubusercontent.com/Abhayprince/Images-Icons/main/Icecreams/small/ic_4.jpg",
                             Name = "Caramel",
                             Price = 2.9900000000000002
                         },
                         new
                         {
                             Id = 6,
-                            Image = "https://github.com/Abhayprince/Images-Icons/blob/main/Icecreams/hq/ic_5.jpg",
+                            Image = "https://raw.githubusercontent.com/Abhayprince/Images-Icons/main/Icecreams/small/ic_5.jpg",
                             Name = "Pistachio",
                             Price = 5.29
                         },
                         new
                         {
                             Id = 7,
-                            Image = "https://github.com/Abhayprince/Images-Icons/blob/main/Icecreams/hq/ic_6.jpg",
+                            Image = "https://raw.githubusercontent.com/Abhayprince/Images-Icons/main/Icecreams/small/ic_6.jpg",
                             Name = "Cookie Dough",
                             Price = 9.9900000000000002
                         },
                         new
                         {
                             Id = 8,
-                            Image = "https://github.com/Abhayprince/Images-Icons/blob/main/Icecreams/hq/ic_7.jpg",
+                            Image = "https://raw.githubusercontent.com/Abhayprince/Images-Icons/main/Icecreams/small/ic_7.jpg",
                             Name = "Lemon",
                             Price = 3.4500000000000002
                         },
                         new
                         {
                             Id = 9,
-                            Image = "https://github.com/Abhayprince/Images-Icons/blob/main/Icecreams/hq/ic_8.jpg",
+                            Image = "https://raw.githubusercontent.com/Abhayprince/Images-Icons/main/Icecreams/small/ic_8.jpg",
                             Name = "Coffee",
                             Price = 7.5
                         },
                         new
                         {
                             Id = 10,
-                            Image = "https://github.com/Abhayprince/Images-Icons/blob/main/Icecreams/hq/ic_9.jpg",
+                            Image = "https://raw.githubusercontent.com/Abhayprince/Images-Icons/main/Icecreams/small/ic_9.jpg",
                             Name = "Coconut",
                             Price = 3.6899999999999999
                         },
                         new
                         {
                             Id = 11,
-                            Image = "https://github.com/Abhayprince/Images-Icons/blob/main/Icecreams/hq/ic_10.jpg",
+                            Image = "https://raw.githubusercontent.com/Abhayprince/Images-Icons/main/Icecreams/small/ic_10.jpg",
                             Name = "Mango",
                             Price = 1.0900000000000001
                         },
                         new
                         {
                             Id = 12,
-                            Image = "https://github.com/Abhayprince/Images-Icons/blob/main/Icecreams/hq/ic_11.jpg",
+                            Image = "https://raw.githubusercontent.com/Abhayprince/Images-Icons/main/Icecreams/small/ic_11.jpg",
                             Name = "Blueberry",
                             Price = 14.99
                         },
                         new
                         {
                             Id = 13,
-                            Image = "https://github.com/Abhayprince/Images-Icons/blob/main/Icecreams/hq/ic_12.jpg",
+                            Image = "https://raw.githubusercontent.com/Abhayprince/Images-Icons/main/Icecreams/small/ic_12.jpg",
                             Name = "Raspberry",
                             Price = 5.0
                         },
                         new
                         {
                             Id = 14,
-                            Image = "https://github.com/Abhayprince/Images-Icons/blob/main/Icecreams/hq/ic_13.jpg",
+                            Image = "https://raw.githubusercontent.com/Abhayprince/Images-Icons/main/Icecreams/small/ic_13.jpg",
                             Name = "Butter Pecan",
                             Price = 6.5899999999999999
                         },
                         new
                         {
                             Id = 15,
-                            Image = "https://github.com/Abhayprince/Images-Icons/blob/main/Icecreams/hq/ic_14.jpg",
+                            Image = "https://raw.githubusercontent.com/Abhayprince/Images-Icons/main/Icecreams/small/ic_14.jpg",
                             Name = "Peach",
                             Price = 1.99
                         },
                         new
                         {
                             Id = 16,
-                            Image = "https://github.com/Abhayprince/Images-Icons/blob/main/Icecreams/hq/ic_15.jpg",
+                            Image = "https://raw.githubusercontent.com/Abhayprince/Images-Icons/main/Icecreams/small/ic_15.jpg",
                             Name = "Cookies and Cream",
                             Price = 3.3399999999999999
                         },
                         new
                         {
                             Id = 17,
-                            Image = "https://github.com/Abhayprince/Images-Icons/blob/main/Icecreams/hq/ic_16.jpg",
+                            Image = "https://raw.githubusercontent.com/Abhayprince/Images-Icons/main/Icecreams/small/ic_16.jpg",
                             Name = "Rocky Road",
                             Price = 5.4199999999999999
                         },
                         new
                         {
                             Id = 18,
-                            Image = "https://github.com/Abhayprince/Images-Icons/blob/main/Icecreams/hq/ic_17.jpg",
+                            Image = "https://raw.githubusercontent.com/Abhayprince/Images-Icons/main/Icecreams/small/ic_17.jpg",
                             Name = "Cherry",
                             Price = 2.4900000000000002
                         },
                         new
                         {
                             Id = 19,
-                            Image = "https://github.com/Abhayprince/Images-Icons/blob/main/Icecreams/hq/ic_18.jpg",
+                            Image = "https://raw.githubusercontent.com/Abhayprince/Images-Icons/main/Icecreams/small/ic_18.jpg",
                             Name = "Blackberry",
                             Price = 3.9900000000000002
                         },
                         new
                         {
                             Id = 20,
-                            Image = "https://github.com/Abhayprince/Images-Icons/blob/main/Icecreams/hq/ic_19.jpg",
+                            Image = "https://raw.githubusercontent.com/Abhayprince/Images-Icons/main/Icecreams/small/ic_19.jpg",
                             Name = "Tiramisu",
                             Price = 4.9900000000000002
                         });
