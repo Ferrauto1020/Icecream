@@ -4,6 +4,7 @@
              x:Class="IcecreamApp.Pages.DetailsPage"
              xmlns:vm="clr-namespace:IcecreamApp.ViewModels"
              xmlns:dto="clr-namespace:IcecreamApp.Shared.Dtos;assembly=IcecreamApp.Shared"
+             xmlns:models="clr-namespace:IcecreamApp.Models"
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              x:DataType="vm:DetailsViewModel"
              Shell.PresentationMode="ModalAnimated">
@@ -63,10 +64,19 @@
                                      HorizontalItemSpacing="10"/>
                 </CollectionView.ItemsLayout>
                 <CollectionView.ItemTemplate>
-                    <DataTemplate x:DataType="dto:IcecreamOptionDto">
+                    <DataTemplate x:DataType="models:IcecreamOption">
                         <Border StrokeShape="RoundRectangle 5"
                                 Stroke="Gray"
                                 Padding="5">
+
+                            <Border.Triggers>
+                                <DataTrigger TargetType="Border" Binding="{Binding IsSelected}" Value="True">
+                                    <Setter Property="Stroke" Value="DeepPink"/>
+                                    <Setter Property="StrokeThickness" Value="3"/>
+                                </DataTrigger>
+                            </Border.Triggers>
+
+
                             <VerticalStackLayout Spacing="5">
                                 <VerticalStackLayout Spacing="2">
                                     <Label Text="{Binding Flavor}"
@@ -86,6 +96,15 @@
                                            FontSize="12"/>
                                 </VerticalStackLayout>
                             </VerticalStackLayout>
+
+<!-- 
+                            <Border.GestureRecognizers>
+                                <TapGestureRecognizer
+            
+                                  Command="{Binding Source={x:RelativeSource AncestorType={x:Type vm:DetailsViewModel}},Path=SelectOptionCommand}"
+                                   CommandParameter="{Binding .}"
+                                    />
+                            </Border.GestureRecognizers> -->
                         </Border>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
@@ -138,8 +157,7 @@
                      CornerRadius="25"
                      Padding="5"
                      Margin="10"
-                     Command="{Binding GoBackCommand}"
-                     >
+                     Command="{Binding GoBackCommand}">
             <ImageButton.Behaviors>
                 <toolkit:IconTintColorBehavior TintColor="White"/>
             </ImageButton.Behaviors>

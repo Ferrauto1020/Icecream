@@ -4,6 +4,12 @@
         <name>IcecreamApp</name>
     </assembly>
     <members>
+        <member name="T:IcecreamApp.Models.IcecreamOption">
+            <inheritdoc/>
+        </member>
+        <member name="P:IcecreamApp.Models.IcecreamOption.IsSelected">
+            <inheritdoc cref="F:IcecreamApp.Models.IcecreamOption._isSelected"/>
+        </member>
         <member name="T:IcecreamApp.ViewModels.AuthViewModel">
             <inheritdoc/>
             <inheritdoc/>
@@ -44,12 +50,21 @@
             <inheritdoc/>
             <inheritdoc/>
             <inheritdoc/>
+            <inheritdoc/>
         </member>
         <member name="P:IcecreamApp.ViewModels.DetailsViewModel.Icecream">
             <inheritdoc cref="F:IcecreamApp.ViewModels.DetailsViewModel._icecream"/>
         </member>
         <member name="P:IcecreamApp.ViewModels.DetailsViewModel.Quantity">
             <inheritdoc cref="F:IcecreamApp.ViewModels.DetailsViewModel._quantity"/>
+        </member>
+        <member name="P:IcecreamApp.ViewModels.DetailsViewModel.Options">
+            <inheritdoc cref="F:IcecreamApp.ViewModels.DetailsViewModel._options"/>
+        </member>
+        <member name="M:IcecreamApp.ViewModels.DetailsViewModel.OnIcecreamChanged(IcecreamApp.Shared.Dtos.IcecreamDto)">
+            <summary>Executes the logic for when <see cref="P:IcecreamApp.ViewModels.DetailsViewModel.Icecream"/> just changed.</summary>
+            <param name="value">The new property value that was set.</param>
+            <remarks>This method is invoked right after the value of <see cref="P:IcecreamApp.ViewModels.DetailsViewModel.Icecream"/> is changed.</remarks>
         </member>
         <member name="F:IcecreamApp.ViewModels.DetailsViewModel.increaseQuantityCommand">
             <summary>The backing field for <see cref="P:IcecreamApp.ViewModels.DetailsViewModel.IncreaseQuantityCommand"/>.</summary>
@@ -68,6 +83,12 @@
         </member>
         <member name="P:IcecreamApp.ViewModels.DetailsViewModel.GoBackCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:IcecreamApp.ViewModels.DetailsViewModel.GoBackAsync"/>.</summary>
+        </member>
+        <member name="F:IcecreamApp.ViewModels.DetailsViewModel.selectOptionCommand">
+            <summary>The backing field for <see cref="P:IcecreamApp.ViewModels.DetailsViewModel.SelectOptionCommand"/>.</summary>
+        </member>
+        <member name="P:IcecreamApp.ViewModels.DetailsViewModel.SelectOptionCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1"/> instance wrapping <see cref="M:IcecreamApp.ViewModels.DetailsViewModel.SelectOption(IcecreamApp.Models.IcecreamOption)"/>.</summary>
         </member>
         <member name="T:IcecreamApp.ViewModels.HomeViewModel">
             <inheritdoc/>
@@ -211,6 +232,9 @@
             for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
             </summary>
         </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsSelected">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsSelected" generated properties.</summary>
+        </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Name">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Name" generated properties.</summary>
         </member>
@@ -232,6 +256,9 @@
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Quantity">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Quantity" generated properties.</summary>
         </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Options">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Options" generated properties.</summary>
+        </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Icecreams">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Icecreams" generated properties.</summary>
         </member>
@@ -243,6 +270,9 @@
             A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
             for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
             </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsSelected">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsSelected" generated properties.</summary>
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Name">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Name" generated properties.</summary>
@@ -270,6 +300,9 @@
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Quantity">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Quantity" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Options">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Options" generated properties.</summary>
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Icecreams">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Icecreams" generated properties.</summary>
