@@ -85,7 +85,12 @@ namespace IcecreamApp.ViewModels
         }
         [RelayCommand]
         private async Task ClearCartAsync()
+        {if(CartItems.Count==0)
         {
+            await ShowAlertAsync("Empty Cart","There are no items in the cart");
+            return;
+        }
+
             if (await ConfirmAsync("Clear Cart?", "Do you really want to clear all the items from the cart?"))
             {
                 await _databaseService.ClearCartAsync();
