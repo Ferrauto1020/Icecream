@@ -27,5 +27,7 @@ namespace IcecreamApp.ViewModels
 
         protected async Task ShowToastAsync(string message)
         => await Toast.Make(message).Show();
+
+        protected async Task<bool> ConfirmAsync(string title,string message) => await Shell.Current.DisplayAlert(title,message,"Yes","No");
     }
 }

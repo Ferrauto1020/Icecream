@@ -25,33 +25,33 @@ namespace IcecreamApp.Services
         => await ExecuteAsync(async () =>
                         await Database.InsertAsync(entity)
                         );
-        
+
         public async Task UpdateCartItemAsync(CartItemEntity entity)
                 => await ExecuteAsync(async () =>
             await Database.UpdateAsync(entity)
             );
-            //var existingCartItem
-        
+        //var existingCartItem
+
         public async Task DeleteCartItemAsync(CartItemEntity entity)
             => await ExecuteAsync(async () =>
             await Database.DeleteAsync(entity));
-            
-        
+
+
 
 
 
         public async Task<CartItemEntity> GetCartItemAsync(int id)
             => await ExecuteAsync(async () =>
              await Database.GetAsync<CartItemEntity>(id));
-        
+
 
 
         public async Task<List<CartItemEntity>> GetAllItemCartItemsAsync()
             => await ExecuteAsync(async () =>
              await Database.Table<CartItemEntity>().ToListAsync());
-            
-            
-        
+
+
+        public async Task<int> ClearCartAsync() => await ExecuteAsync(async () => await Database.DeleteAllAsync<CartItemEntity>());
 
         public async ValueTask DisposeAsync()
             =>

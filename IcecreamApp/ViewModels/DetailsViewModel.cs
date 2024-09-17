@@ -73,11 +73,13 @@ namespace IcecreamApp.ViewModels
 
 
         [RelayCommand]
-        private void AddToCart()
+        private async Task AddToCartAsync()
         {
             //var selectedOption =  Option.FirstOrDefault(0=>o.IsSelected)??Options[0] //to fix after cause selectOption doesn't work
 
             _cartViewModel.AddItemToCart(Icecream, Quantity,"none","base");
+
+            await GoBackAsync();
         }
 
 

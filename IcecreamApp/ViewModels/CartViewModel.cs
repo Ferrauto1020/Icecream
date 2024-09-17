@@ -1,4 +1,5 @@
 using System.Collections.ObjectModel;
+using CommunityToolkit.Mvvm.Input;
 using IcecreamApp.Data;
 using IcecreamApp.Models;
 using IcecreamApp.Services;
@@ -44,6 +45,7 @@ namespace IcecreamApp.ViewModels
             {
                 var cartItem = new CartItem
                 {
+                    Name = icecream.Name,
                     FlavorName = flavor,
                     IcecreamId = icecream.Id,
                     Price = icecream.Price,
@@ -70,16 +72,46 @@ namespace IcecreamApp.ViewModels
         public int GetItemCartCount(int icecreamId)
         {
             var existingItem = CartItems.FirstOrDefault(i => i.IcecreamId == icecreamId);
-             return existingItem?.Quantity ?? 0;
+            return existingItem?.Quantity ?? 0;
         }
         public async Task InitializeCartAsync()
         {
             var dbItems = await _databaseService.GetAllItemCartItemsAsync();
-            foreach ( var dbItem in dbItems)
+            foreach (var dbItem in dbItems)
             {
                 CartItems.Add(dbItem.ToCartItemModel());
             }
             NotifyCartCountChanged();
+        }
+        [RelayCommand]
+        private async Task ClearCartAsync()
+        {
+            if (await ConfirmAsync("Clear Cart?", "Do you really want to clear all the items from the cart?"))
+            {
+                await _databaseService.ClearCartAsync();
+                CartItems.Clear();
+                await ShowToastAsync("Cart Cleared");
+                NotifyCartCountChanged();
+            }
+        }
+        [RelayCommand]
+        private async Task ClearCartItemAsync(int cartItemId)
+        {
+            if (await ConfirmAsync("Remove Item?", "Do you really want to remove this Icecream?"))
+            {
+                var existingCartItem = CartItems.FirstOrDefault(i => i.Id == cartItemId);
+                if (existingCartItem is null)
+                    return;
+                CartItems.Remove(existingCartItem);
+                
+                var dbItem = await _databaseService.GetCartItemAsync(existingCartItem.Id);
+                if (dbItem is null)
+                    return;
+                
+                await _databaseService.DeleteCartItemAsync(dbItem);
+                await ShowToastAsync("Icecream removed");
+                NotifyCartCountChanged();
+            }
         }
     }
 }
