@@ -30,6 +30,7 @@ builder.Services
         .AddTransient<PasswordServices>()
         .AddTransient<AuthServices>()
         .AddTransient<IcecreamServices>()
+        .AddTransient<OrderService>()
         ;
 
 

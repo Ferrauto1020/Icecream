@@ -2,17 +2,24 @@ using System.Collections.ObjectModel;
 using CommunityToolkit.Mvvm.Input;
 using IcecreamApp.Data;
 using IcecreamApp.Models;
+using IcecreamApp.Pages;
 using IcecreamApp.Services;
 using IcecreamApp.Shared.Dtos;
+using Refit;
 
 namespace IcecreamApp.ViewModels
 {
     public partial class CartViewModel : BaseViewModel
     {
         private readonly DatabaseService _databaseService;
-        public CartViewModel(DatabaseService databaseService)
+        private readonly IOrderApi _orderApi;
+        private readonly AuthService _authService;
+
+        public CartViewModel(DatabaseService databaseService, IOrderApi orderApi, AuthService authService)
         {
             _databaseService = databaseService;
+            _orderApi = orderApi;
+            _authService = authService;
         }
 
         public ObservableCollection<CartItem> CartItems { get; set; } = [];
@@ -85,19 +92,8 @@ namespace IcecreamApp.ViewModels
         }
         [RelayCommand]
         private async Task ClearCartAsync()
-        {if(CartItems.Count==0)
         {
-            await ShowAlertAsync("Empty Cart","There are no items in the cart");
-            return;
-        }
-
-            if (await ConfirmAsync("Clear Cart?", "Do you really want to clear all the items from the cart?"))
-            {
-                await _databaseService.ClearCartAsync();
-                CartItems.Clear();
-                await ShowToastAsync("Cart Cleared");
-                NotifyCartCountChanged();
-            }
+            await ClearCartInternalAsync(fromPlaceOrder: false);
         }
         [RelayCommand]
         private async Task ClearCartItemAsync(int cartItemId)
@@ -108,14 +104,75 @@ namespace IcecreamApp.ViewModels
                 if (existingCartItem is null)
                     return;
                 CartItems.Remove(existingCartItem);
-                
+
                 var dbItem = await _databaseService.GetCartItemAsync(existingCartItem.Id);
                 if (dbItem is null)
                     return;
-                
+
                 await _databaseService.DeleteCartItemAsync(dbItem);
                 await ShowToastAsync("Icecream removed");
                 NotifyCartCountChanged();
+            }
+        }
+
+
+
+        private async Task ClearCartInternalAsync(bool fromPlaceOrder)
+        {
+            if (!fromPlaceOrder && CartItems.Count == 0)
+            {
+                await ShowAlertAsync("Empty Cart", "There are no items in the cart");
+                return;
+            }
+            if (fromPlaceOrder
+            || await ConfirmAsync("Clear Cart?", "Do you really want to clear all the items from the cart?"))
+            {
+                await _databaseService.ClearCartAsync();
+                CartItems.Clear();
+
+                if (!fromPlaceOrder)
+                    await ShowToastAsync("Cart Cleared");
+                NotifyCartCountChanged();
+
+            }
+        }
+        [RelayCommand]
+        private async Task PlaceOrderAsync()
+        {
+            if (CartItems.Count == 0)
+            {
+                await ShowAlertAsync("Empty Cart", "Do you want to buy the air?");
+                return;
+            }
+            IsBusy = true;
+            try
+            {
+                var order = new OrderDto(0, DateTime.Now, CartItems.Sum(o => o.TotalPrice));
+                var orderItems = CartItems.Select(i => new OrderItemDto(0, i.IcecreamId, i.Name, i.Quantity, i.Price, i.FlavorName, i.ToppingName)).ToArray();
+                var orderPlaceDto = new OrderPlaceDto(order, orderItems);
+                var result = await _orderApi.PlaceOrderAsync(orderPlaceDto);
+                if (!result.IsSuccess)
+                {
+                    await ShowErrorAlertAsync(result.ErrorMessage!);
+                    return;
+                }
+                await ShowToastAsync("order placed");
+                await ClearCartInternalAsync(fromPlaceOrder: true);
+            }
+            catch (ApiException ex)
+            {
+                if(ex.StatusCode == System.Net.HttpStatusCode.Unauthorized)
+                {
+                    await ShowErrorAlertAsync("Session expired");
+                    _authService.Signout();
+                    await GoToAsync($"//{nameof(OnboardingPage)}");
+                }
+                Console.WriteLine(ex.Message);
+                await ShowErrorAlertAsync(ex.Message);
+            }
+            finally
+            {
+                IsBusy = false;
             }
         }
     }

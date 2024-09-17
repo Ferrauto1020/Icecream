@@ -54,6 +54,7 @@
         <member name="T:IcecreamApp.ViewModels.CartViewModel">
             <inheritdoc/>
             <inheritdoc/>
+            <inheritdoc/>
         </member>
         <member name="F:IcecreamApp.ViewModels.CartViewModel.clearCartCommand">
             <summary>The backing field for <see cref="P:IcecreamApp.ViewModels.CartViewModel.ClearCartCommand"/>.</summary>
@@ -66,6 +67,12 @@
         </member>
         <member name="P:IcecreamApp.ViewModels.CartViewModel.ClearCartItemCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:IcecreamApp.ViewModels.CartViewModel.ClearCartItemAsync(System.Int32)"/>.</summary>
+        </member>
+        <member name="F:IcecreamApp.ViewModels.CartViewModel.placeOrderCommand">
+            <summary>The backing field for <see cref="P:IcecreamApp.ViewModels.CartViewModel.PlaceOrderCommand"/>.</summary>
+        </member>
+        <member name="P:IcecreamApp.ViewModels.CartViewModel.PlaceOrderCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:IcecreamApp.ViewModels.CartViewModel.PlaceOrderAsync"/>.</summary>
         </member>
         <member name="T:IcecreamApp.ViewModels.DetailsViewModel">
             <inheritdoc/>
@@ -379,6 +386,21 @@
             <inheritdoc />
         </member>
         <member name="M:Refit.Implementation.Generated.IcecreamAppServicesIIcecreamApi.IcecreamApp#Services#IIcecreamApi#GetIcecreamsAsync">
+            <inheritdoc />
+        </member>
+        <member name="T:Refit.Implementation.Generated.IcecreamAppServicesIOrderApi">
+            <inheritdoc />
+        </member>
+        <member name="P:Refit.Implementation.Generated.IcecreamAppServicesIOrderApi.Client">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.IcecreamAppServicesIOrderApi.#ctor(System.Net.Http.HttpClient,Refit.IRequestBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.IcecreamAppServicesIOrderApi.PlaceOrderAsync(IcecreamApp.Shared.Dtos.OrderPlaceDto)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.IcecreamAppServicesIOrderApi.IcecreamApp#Services#IOrderApi#PlaceOrderAsync(IcecreamApp.Shared.Dtos.OrderPlaceDto)">
             <inheritdoc />
         </member>
     </members>

@@ -30,7 +30,7 @@ public static class MauiProgram
 		builder.Logging.AddDebug();
 #endif
 
-builder.Services.AddSingleton<DatabaseService>();
+		builder.Services.AddSingleton<DatabaseService>();
 
 		builder.Services.AddTransient<AuthViewModel>()
 						.AddTransient<SigninPage>()
@@ -51,26 +51,19 @@ builder.Services.AddSingleton<DatabaseService>();
 	private static void ConfigureRefit(IServiceCollection services)
 	{
 
-		var refitSettings = new RefitSettings
-		{
-			HttpMessageHandlerFactory = () =>
-			{
-				//reutrn HttpMessageHandler
-				return new HttpClientHandler
-				{
-					ServerCertificateCustomValidationCallback = (httpRequestMessage, certificate, chain, sslPolicyErrors) =>
-				   {
-					   return certificate?.Issuer == "CN=localhost" || sslPolicyErrors == SslPolicyErrors.None;
-				   }
-				};
-			}
-		};
 
-		services.AddRefitClient<IAuthApi>(refitSettings)
+
+
+		services.AddRefitClient<IAuthApi>(GetRefitSettings)
 		.ConfigureHttpClient(SetHttpClient);
 
-		services.AddRefitClient<IIcecreamApi>(refitSettings)
+		services.AddRefitClient<IIcecreamApi>(GetRefitSettings)
 		.ConfigureHttpClient(SetHttpClient);
+
+		services.AddRefitClient<IOrderApi>(GetRefitSettings)
+		.ConfigureHttpClient(SetHttpClient);
+
+
 
 		static void SetHttpClient(HttpClient httpClient)
 		{
@@ -81,8 +74,32 @@ builder.Services.AddSingleton<DatabaseService>();
 
 			httpClient.DefaultRequestHeaders.Add("Accept", "application/json");
 
-			Console.WriteLine($"HttpClient BaseAddress: {httpClient.BaseAddress}");
+			//Console.WriteLine($"HttpClient BaseAddress: {httpClient.BaseAddress}");
 		};
+
+
+		static RefitSettings GetRefitSettings(IServiceProvider serviceProvider)
+		{
+			var authService = serviceProvider.GetRequiredService<AuthService>();
+			var refitSettings = new RefitSettings
+			{
+				HttpMessageHandlerFactory = () =>
+				{
+					//reutrn HttpMessageHandler
+					return new HttpClientHandler
+					{
+						ServerCertificateCustomValidationCallback = (httpRequestMessage, certificate, chain, sslPolicyErrors) =>
+					   {
+						   return certificate?.Issuer == "CN=localhost" || sslPolicyErrors == SslPolicyErrors.None;
+					   }
+					};
+				},
+				AuthorizationHeaderValueGetter = (_, __) =>
+				Task.FromResult(authService.Token ?? string.Empty)//return jwt
+			};
+			return refitSettings;
+
+		}
 	}
 
 }

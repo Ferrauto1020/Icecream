@@ -1,9 +1,15 @@
+using System.Security.Claims;
 using IcecreamApp.Shared.Dtos;
 
 namespace IcecreamApp.Api.Services
 {
     public static class Endpoints
     {
+        private static Guid GetUserId(this ClaimsPrincipal principal) =>
+        Guid.Parse(principal.FindFirstValue(ClaimTypes.NameIdentifier)!);
+
+
+
         public static IEndpointRouteBuilder MapEndpoints(this IEndpointRouteBuilder app)
         {
             app.MapPost("/api/signup", async (SignupRequestDto dto, AuthServices authService) =>
@@ -24,6 +30,16 @@ namespace IcecreamApp.Api.Services
                 var result = await icecreamService.GetIcecreamsAsync();
                 return TypedResults.Ok(result);
             });
+            var orderGroup = app.MapGroup("/api/order").RequireAuthorization();
+            orderGroup.MapPost("/place-order",
+            async (OrderPlaceDto dto, ClaimsPrincipal principal, OrderService orderService) =>
+
+                {
+                 var result=   await orderService.PlaceOrderAsync(dto, principal.GetUserId());
+                 return result;
+                }
+                );
+
 
             return app;
         }
