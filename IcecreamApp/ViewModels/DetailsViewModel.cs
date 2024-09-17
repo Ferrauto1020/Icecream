@@ -41,6 +41,7 @@ namespace IcecreamApp.ViewModels
                 Topping = o.Topping,
                 IsSelected = false
             }).ToArray();
+            Quantity = _cartViewModel.GetItemCartCount(value.Id);
         }
 
         [RelayCommand]
@@ -74,11 +75,9 @@ namespace IcecreamApp.ViewModels
         [RelayCommand]
         private void AddToCart()
         {
-            var selectedOption = new IcecreamOption{
-Topping="none",
-Flavor="base"
-            };
-            _cartViewModel.AddItemToCart(Icecream, Quantity, selectedOption.Flavor, selectedOption.Topping);
+            //var selectedOption =  Option.FirstOrDefault(0=>o.IsSelected)??Options[0] //to fix after cause selectOption doesn't work
+
+            _cartViewModel.AddItemToCart(Icecream, Quantity,"none","base");
         }
 
 
