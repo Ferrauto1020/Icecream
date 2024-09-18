@@ -3,7 +3,6 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="IcecreamApp.Pages.DetailsPage"
              xmlns:vm="clr-namespace:IcecreamApp.ViewModels"
-             xmlns:dto="clr-namespace:IcecreamApp.Shared.Dtos;assembly=IcecreamApp.Shared"
              xmlns:models="clr-namespace:IcecreamApp.Models"
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              x:DataType="vm:DetailsViewModel"
@@ -56,7 +55,7 @@
 
             <CollectionView Grid.Row="1"
                             VerticalOptions="Center"
-                            ItemsSource="{Binding Icecream.Options}">
+                            ItemsSource="{Binding Options}">
                 <CollectionView.ItemsLayout>
                     <GridItemsLayout Span="2"
                                      Orientation="Horizontal"
@@ -97,14 +96,13 @@
                                 </VerticalStackLayout>
                             </VerticalStackLayout>
 
-<!-- 
                             <Border.GestureRecognizers>
                                 <TapGestureRecognizer
             
                                   Command="{Binding Source={x:RelativeSource AncestorType={x:Type vm:DetailsViewModel}},Path=SelectOptionCommand}"
                                    CommandParameter="{Binding .}"
                                     />
-                            </Border.GestureRecognizers> -->
+                            </Border.GestureRecognizers> 
                         </Border>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>

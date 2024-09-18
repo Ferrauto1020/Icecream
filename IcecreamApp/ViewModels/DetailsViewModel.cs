@@ -33,7 +33,7 @@ namespace IcecreamApp.ViewModels
         partial void OnIcecreamChanged(IcecreamDto? value)
         {
             Options = [];
-            if (value is not null)
+            if (value is  null)
                 return;
             Options = value.Options.Select(o => new IcecreamOption
             {
@@ -75,9 +75,9 @@ namespace IcecreamApp.ViewModels
         [RelayCommand]
         private async Task AddToCartAsync()
         {
-            //var selectedOption =  Option.FirstOrDefault(0=>o.IsSelected)??Options[0] //to fix after cause selectOption doesn't work
+            var selectedOption =  Options.FirstOrDefault(o=>o.IsSelected)??Options[0]; //to fix after cause selectOption doesn't work
 
-            _cartViewModel.AddItemToCart(Icecream, Quantity,"none","base");
+            _cartViewModel.AddItemToCart(Icecream, Quantity,selectedOption.Flavor,selectedOption.Topping);
 
             await GoBackAsync();
         }
