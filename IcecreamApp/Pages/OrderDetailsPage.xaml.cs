@@ -1,9 +1,15 @@
+using IcecreamApp.ViewModels;
+
 namespace IcecreamApp.Pages;
 
 public partial class OrderDetailsPage : ContentPage
 {
-	public OrderDetailsPage()
+    private readonly OrderDetailsViewModel _orderDetailsViewModel;
+
+    public OrderDetailsPage(OrderDetailsViewModel orderDetailsViewModel)
 	{
 		InitializeComponent();
-	}
+        _orderDetailsViewModel = orderDetailsViewModel;
+		BindingContext = _orderDetailsViewModel;
+    }
 }

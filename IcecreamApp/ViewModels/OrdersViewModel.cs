@@ -1,5 +1,6 @@
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using IcecreamApp.Pages;
 using IcecreamApp.Services;
 using IcecreamApp.Shared.Dtos;
 using Refit;
@@ -44,6 +45,14 @@ namespace IcecreamApp.ViewModels
                 IsBusy = false;
             }
         }
-
+        [RelayCommand]
+        private async Task GoToOrderDetailsPageAsync(long orderId)
+        {
+            var parameter = new Dictionary<string, object>
+            {
+                [nameof(OrderDetailsViewModel.OrderId)]=orderId
+            };
+            await GoToAsync(nameof(OrderDetailsPage),animate:true,parameter);
+        }
     }
 }

@@ -142,7 +142,25 @@
         <member name="P:IcecreamApp.ViewModels.HomeViewModel.GoToDetailsPageCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:IcecreamApp.ViewModels.HomeViewModel.GoToDetailsPageAsync(IcecreamApp.Shared.Dtos.IcecreamDto)"/>.</summary>
         </member>
+        <member name="T:IcecreamApp.ViewModels.OrderDetailsViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="P:IcecreamApp.ViewModels.OrderDetailsViewModel.OrderId">
+            <inheritdoc cref="F:IcecreamApp.ViewModels.OrderDetailsViewModel._orderId"/>
+        </member>
+        <member name="P:IcecreamApp.ViewModels.OrderDetailsViewModel.OrderItems">
+            <inheritdoc cref="F:IcecreamApp.ViewModels.OrderDetailsViewModel._orderItems"/>
+        </member>
+        <member name="P:IcecreamApp.ViewModels.OrderDetailsViewModel.Title">
+            <inheritdoc cref="F:IcecreamApp.ViewModels.OrderDetailsViewModel._title"/>
+        </member>
+        <member name="M:IcecreamApp.ViewModels.OrderDetailsViewModel.OnOrderIdChanged(System.Int64)">
+            <summary>Executes the logic for when <see cref="P:IcecreamApp.ViewModels.OrderDetailsViewModel.OrderId"/> just changed.</summary>
+            <param name="value">The new property value that was set.</param>
+            <remarks>This method is invoked right after the value of <see cref="P:IcecreamApp.ViewModels.OrderDetailsViewModel.OrderId"/> is changed.</remarks>
+        </member>
         <member name="T:IcecreamApp.ViewModels.OrdersViewModel">
+            <inheritdoc/>
             <inheritdoc/>
             <inheritdoc/>
         </member>
@@ -154,6 +172,12 @@
         </member>
         <member name="P:IcecreamApp.ViewModels.OrdersViewModel.LoadOrderCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:IcecreamApp.ViewModels.OrdersViewModel.LoadOrderAsync"/>.</summary>
+        </member>
+        <member name="F:IcecreamApp.ViewModels.OrdersViewModel.goToOrderDetailsPageCommand">
+            <summary>The backing field for <see cref="P:IcecreamApp.ViewModels.OrdersViewModel.GoToOrderDetailsPageCommand"/>.</summary>
+        </member>
+        <member name="P:IcecreamApp.ViewModels.OrdersViewModel.GoToOrderDetailsPageCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:IcecreamApp.ViewModels.OrdersViewModel.GoToOrderDetailsPageAsync(System.Int64)"/>.</summary>
         </member>
         <member name="T:IcecreamApp.ViewModels.ProfileViewModel">
             <inheritdoc/>
@@ -334,6 +358,15 @@
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.UserName">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "UserName" generated properties.</summary>
         </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.OrderId">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "OrderId" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.OrderItems">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "OrderItems" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Title">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Title" generated properties.</summary>
+        </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Orders">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Orders" generated properties.</summary>
         </member>
@@ -384,6 +417,15 @@
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.UserName">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "UserName" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.OrderId">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "OrderId" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.OrderItems">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "OrderItems" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Title">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Title" generated properties.</summary>
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Orders">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Orders" generated properties.</summary>

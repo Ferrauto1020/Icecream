@@ -13,6 +13,6 @@ namespace IcecreamApp.Services
         Task<OrderDto[]> GetMyOrdersAsync();
         
         [Get("/api/orders/{orderId}/items")]
-        Task<OrderDto[]> GetOrderItemsAsync(long orderId);
+        Task<OrderItemDto[]> GetOrderItemsAsync(long orderId);
     }
 }
