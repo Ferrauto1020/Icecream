@@ -37,8 +37,6 @@ namespace IcecreamApp.Api.Services
             }
         }
 
-
-
         public async Task<ResultWithDataDto<AuthResponseDto>> SigninAsync(SigninRequestDto dto)
         {
             var dbUser = await _context.Users
@@ -47,7 +45,7 @@ namespace IcecreamApp.Api.Services
             if (dbUser is null)
                 return ResultWithDataDto<AuthResponseDto>.Failure("user doesn't exist");
 
-             if (!_passwordServices.AreEqual(dto.Password, dbUser.Salt, dbUser.Hash))
+            if (!_passwordServices.AreEqual(dto.Password, dbUser.Salt, dbUser.Hash))
                 return ResultWithDataDto<AuthResponseDto>.Failure("incorrect password");
 
             return GenerateAuthResponse(dbUser);
@@ -59,6 +57,27 @@ namespace IcecreamApp.Api.Services
             var token = _tokenServices.GenerateJwt(loggedInUser);
             var authResponse = new AuthResponseDto(loggedInUser, token);
             return ResultWithDataDto<AuthResponseDto>.Success(authResponse);
+        }
+
+        public async Task<ResultDto> ChangePasswordAsync(ChangePasswordDto dto, Guid userId)
+        {
+            var user = await _context.Users.FirstOrDefaultAsync(u => u.Id == userId);
+            if (user is null)
+                return ResultDto.Failure("invalid request");
+            if (!_passwordServices.AreEqual(dto.OldPassword, user.Salt, user.Hash))
+            {
+                return ResultDto.Failure("Incorrect password");
+            }
+            /* if(!string.Equals(dto.ConfirmNewPassword,dto.NewPassword))
+                return ResultDto.Failure("you provided different passwords");
+            
+            if(string.Equals(dto.OldPassword,dto.NewPassword))
+                return ResultDto.Failure("new password can't be the same of old password");
+             */
+            (user.Salt, user.Hash) = _passwordServices.GenerateSaltAndHash(dto.NewPassword);
+
+            await _context.SaveChangesAsync();
+            return ResultDto.Success();
         }
     }
 }

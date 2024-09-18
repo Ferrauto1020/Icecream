@@ -25,6 +25,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = IcecreamApp.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
+[F:/Giuseppe/lavori maui/github repo/Icecream/IcecreamApp/Controls/ChangePasswordControl.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = IcecreamApp.Controls.ChangePasswordControl.xaml
+build_metadata.AdditionalFiles.TargetPath = Controls\ChangePasswordControl.xaml
+build_metadata.AdditionalFiles.RelativePath = Controls\ChangePasswordControl.xaml
+
 [F:/Giuseppe/lavori maui/github repo/Icecream/IcecreamApp/Pages/CartPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = IcecreamApp.Pages.CartPage.xaml

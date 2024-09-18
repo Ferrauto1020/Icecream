@@ -12,17 +12,27 @@ namespace IcecreamApp.Api.Services
 
         public static IEndpointRouteBuilder MapEndpoints(this IEndpointRouteBuilder app)
         {
-            app.MapPost("/api/signup", async (SignupRequestDto dto, AuthServices authService) =>
+            app.MapPost("/api/auth/signup", async (SignupRequestDto dto, AuthServices authService) =>
             {
                 var result = await authService.SignupAsync(dto);
                 return TypedResults.Ok(result);
             });
 
-            app.MapPost("/api/signin", async (SigninRequestDto dto, AuthServices authService) =>
+            app.MapPost("/api/auth/signin", async (SigninRequestDto dto, AuthServices authService) =>
             {
                 var result = await authService.SigninAsync(dto);
                 return TypedResults.Ok(result);
             });
+
+            app.MapPost("/api/auth/change-password",
+            async(ChangePasswordDto dto,ClaimsPrincipal principal,AuthServices authServices) =>
+            TypedResults.Ok(
+                await authServices.ChangePasswordAsync(dto,principal.GetUserId())
+            ) 
+            ).RequireAuthorization();
+
+
+
 
             app.MapGet("/api/icecreams",
             async (IcecreamServices icecreamService) =>
@@ -47,11 +57,12 @@ namespace IcecreamApp.Api.Services
                     )
                 );
             orderGroup.MapGet("/{orderId:long}/items",
-                async(long orderId, ClaimsPrincipal principal, OrderService orderService) =>
+                async (long orderId, ClaimsPrincipal principal, OrderService orderService) =>
                 TypedResults.Ok(
-                    await orderService.GetUserOrderItemsAsync(orderId,principal.GetUserId())
+                    await orderService.GetUserOrderItemsAsync(orderId, principal.GetUserId())
                 )
             );
+
 
             return app;
         }

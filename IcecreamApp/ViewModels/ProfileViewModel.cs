@@ -1,5 +1,7 @@
+using CommunityToolkit.Maui.Views;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using IcecreamApp.Controls;
 using IcecreamApp.Pages;
 using IcecreamApp.Services;
 
@@ -8,10 +10,12 @@ namespace IcecreamApp.ViewModels
     public partial class ProfileViewModel : BaseViewModel
     {
         private readonly AuthService _authService;
+        private readonly ChangePasswordViewModel _changePasswordViewModel;
 
-        public ProfileViewModel(AuthService authService)
+        public ProfileViewModel(AuthService authService, ChangePasswordViewModel changePasswordViewModel)
         {
             _authService = authService;
+            _changePasswordViewModel = changePasswordViewModel;
         }
         [ObservableProperty, NotifyPropertyChangedFor(nameof(Initials))]
         private string _name = "";
@@ -42,7 +46,10 @@ namespace IcecreamApp.ViewModels
         [RelayCommand]
         private async Task GoToMyOrderAsync() =>
             await GoToAsync(nameof(MyOrdersPage), animate: true);
-
-
+        [RelayCommand]
+        private async Task ChangePasswordAsync()
+        {
+            await Shell.Current.CurrentPage.ShowPopupAsync(new ChangePasswordControl(_changePasswordViewModel));
+        }
     }
 }

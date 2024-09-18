@@ -51,7 +51,11 @@
                      Color="Pink"
                      Margin="0,10"/>
             <Label Text="Change Password"
-                   Style="{x:StaticResource MenuLbl}"/>
+                   Style="{x:StaticResource MenuLbl}">
+                   <Label.GestureRecognizers>
+                     <TapGestureRecognizer Command="{Binding ChangePasswordCommand}"/>
+                   </Label.GestureRecognizers>
+                   </Label>
             <BoxView HeightRequest="1"
                      Color="Pink"
                      Margin="0,10"/>
