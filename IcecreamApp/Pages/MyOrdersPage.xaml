@@ -3,13 +3,60 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:vm="clr-namespace:IcecreamApp.ViewModels"
              xmlns:dto="clr-namespace:IcecreamApp.Shared.Dtos;assembly=IcecreamApp.Shared"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              x:Class="IcecreamApp.Pages.MyOrdersPage"
              Title="MyOrdersPage"
+             BackgroundColor="#EEE"
              x:DataType="vm:OrdersViewModel">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <RefreshView Command="{Binding LoadOrderCommand}"
+                 IsRefreshing="{Binding IsBusy}">
+        <Grid>
+            <ScrollView Padding="10">
+                <CollectionView ItemsSource="{Binding Orders}">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate x:DataType="dto:OrderDto">
+                            <Border StrokeShape="RoundRectangle 10"
+                                    BackgroundColor="White"
+                                    Margin="0,2"
+                                    Padding="10">
+                                <Grid ColumnDefinitions="*,Auto,Auto" ColumnSpacing="10">
+                                    <Grid Grid.Column="0"
+                                            RowDefinitions="*,Auto"
+                                            RowSpacing="2">
+                                        <Label Grid.Row="0"
+                                                Text="{Binding Id, StringFormat='Order Id: {0}'}"
+                                                FontSize="15"
+                                                TextColor="DeepPink"/>
+                                        <Label Grid.Row="1"
+                                                Text="{Binding ItemsCountDisplay}"
+                                                FontSize="13"/>
+                                    </Grid>
+                                    <Grid Grid.Column="1"
+                                            RowDefinitions="*,*"
+                                            RowSpacing="2">
+                                        <Label Grid.Row="0"
+                                                Text="{Binding TotalPrice, StringFormat='{0:C}'}"
+                                                FontAttributes="Bold" HorizontalOptions="End"
+                                                FontSize="15"
+                                                TextColor="DeepPink"/>
+                                        <Label Grid.Row="1"
+                                                Text="{Binding OrderAt ,StringFormat='{0:MMM dd yyyy, hh:mm}'}"
+                                                FontSize="13"/>
+                                    </Grid>
+                                    <Image Grid.Column="2" Source="right.png" VerticalOptions="Center">
+                                        <Image.Behaviors>
+                                            <toolkit:IconTintColorBehavior TintColor="DeepPink"/>
+                                        </Image.Behaviors>
+                                    </Image>
+                                </Grid>
+                            </Border>
+
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+
+                </CollectionView>
+            </ScrollView>
+            <ActivityIndicator IsRunning="{Binding IsBusy}"/>
+        </Grid>
+    </RefreshView>
 </ContentPage>

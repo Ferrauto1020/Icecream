@@ -68,7 +68,8 @@ namespace IcecreamApp.Api.Services
             .Select(o => new OrderDto(
                 o.Id,
                 o.OrderAt,
-                o.TotalPrice
+                o.TotalPrice,
+                o.Items.Count
             )).ToArrayAsync();
 
         public async Task<OrderItemDto[]> GetUserOrderItemsAsync(long orderId, Guid userId) =>
