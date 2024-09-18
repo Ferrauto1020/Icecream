@@ -44,6 +44,9 @@ public static class MauiProgram
 						.AddTransient<DetailsPage>();
 		builder.Services.AddSingleton<CartViewModel>()
 						.AddTransient<CartPage>();
+		builder.Services.AddTransient<ProfilePage>()
+						.AddTransient<ProfileViewModel>();
+
 		ConfigureRefit(builder.Services);
 		return builder.Build();
 	}

@@ -142,6 +142,19 @@
         <member name="P:IcecreamApp.ViewModels.HomeViewModel.GoToDetailsPageCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:IcecreamApp.ViewModels.HomeViewModel.GoToDetailsPageAsync(IcecreamApp.Shared.Dtos.IcecreamDto)"/>.</summary>
         </member>
+        <member name="T:IcecreamApp.ViewModels.ProfileViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:IcecreamApp.ViewModels.ProfileViewModel.Name">
+            <inheritdoc cref="F:IcecreamApp.ViewModels.ProfileViewModel._name"/>
+        </member>
+        <member name="F:IcecreamApp.ViewModels.ProfileViewModel.signoutCommand">
+            <summary>The backing field for <see cref="P:IcecreamApp.ViewModels.ProfileViewModel.SignoutCommand"/>.</summary>
+        </member>
+        <member name="P:IcecreamApp.ViewModels.ProfileViewModel.SignoutCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:IcecreamApp.ViewModels.ProfileViewModel.SignoutAsync"/>.</summary>
+        </member>
         <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Button.TextColorTo(Microsoft.Maui.Controls.Button,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
             <summary>
             Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
@@ -348,6 +361,9 @@
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.UserName">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "UserName" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Initials">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Initials" generated properties.</summary>
         </member>
         <member name="T:Refit.Implementation.Generated">
             <inheritdoc />
