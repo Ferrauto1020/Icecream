@@ -89,10 +89,13 @@ namespace IcecreamApp.ViewModels
         public async Task InitializeCartAsync()
         {
             var dbItems = await _databaseService.GetAllItemCartItemsAsync();
+            Console.WriteLine(dbItems);
             foreach (var dbItem in dbItems)
             {
                 CartItems.Add(dbItem.ToCartItemModel());
+                Console.WriteLine(dbItem);
             }
+            Console.WriteLine(CartItems);
             NotifyCartCountChanged();
         }
         [RelayCommand]

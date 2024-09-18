@@ -29,6 +29,7 @@ namespace IcecreamApp.Data
         public CartItem ToCartItemModel()=> new (){
             Id=Id,
             Name=Name,
+            Price=Price,
             FlavorName=FlavorName,
             ToppingName=ToppingName,
             IcecreamId=IcecreamId,
