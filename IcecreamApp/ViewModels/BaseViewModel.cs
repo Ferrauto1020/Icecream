@@ -2,6 +2,7 @@ using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Maui.Alerts;
 using IcecreamApp.Pages;
 using IcecreamApp.Shared.Dtos;
+using Refit;
 namespace IcecreamApp.ViewModels
 {
     public partial class BaseViewModel : ObservableObject
@@ -32,5 +33,19 @@ namespace IcecreamApp.ViewModels
         => await Toast.Make(message).Show();
 
         protected async Task<bool> ConfirmAsync(string title,string message) => await Shell.Current.DisplayAlert(title,message,"Yes","No");
+   
+
+protected async Task HandleApiExceptionAsync(ApiException ex, Action? signout = null)
+{
+                 if(ex.StatusCode == System.Net.HttpStatusCode.Unauthorized)
+                {
+                    await ShowErrorAlertAsync("Session expired");
+                    signout?.Invoke();
+                    await GoToAsync($"//{nameof(OnboardingPage)}");
+                }
+                Console.WriteLine(ex.Message);
+                await ShowErrorAlertAsync(ex.Message);
+  
+}   
     }
 }

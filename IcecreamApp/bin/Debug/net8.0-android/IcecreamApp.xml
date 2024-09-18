@@ -142,7 +142,21 @@
         <member name="P:IcecreamApp.ViewModels.HomeViewModel.GoToDetailsPageCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:IcecreamApp.ViewModels.HomeViewModel.GoToDetailsPageAsync(IcecreamApp.Shared.Dtos.IcecreamDto)"/>.</summary>
         </member>
+        <member name="T:IcecreamApp.ViewModels.OrdersViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:IcecreamApp.ViewModels.OrdersViewModel.Orders">
+            <inheritdoc cref="F:IcecreamApp.ViewModels.OrdersViewModel._orders"/>
+        </member>
+        <member name="F:IcecreamApp.ViewModels.OrdersViewModel.loadOrderCommand">
+            <summary>The backing field for <see cref="P:IcecreamApp.ViewModels.OrdersViewModel.LoadOrderCommand"/>.</summary>
+        </member>
+        <member name="P:IcecreamApp.ViewModels.OrdersViewModel.LoadOrderCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:IcecreamApp.ViewModels.OrdersViewModel.LoadOrderAsync"/>.</summary>
+        </member>
         <member name="T:IcecreamApp.ViewModels.ProfileViewModel">
+            <inheritdoc/>
             <inheritdoc/>
             <inheritdoc/>
         </member>
@@ -154,6 +168,12 @@
         </member>
         <member name="P:IcecreamApp.ViewModels.ProfileViewModel.SignoutCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:IcecreamApp.ViewModels.ProfileViewModel.SignoutAsync"/>.</summary>
+        </member>
+        <member name="F:IcecreamApp.ViewModels.ProfileViewModel.goToMyOrderCommand">
+            <summary>The backing field for <see cref="P:IcecreamApp.ViewModels.ProfileViewModel.GoToMyOrderCommand"/>.</summary>
+        </member>
+        <member name="P:IcecreamApp.ViewModels.ProfileViewModel.GoToMyOrderCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:IcecreamApp.ViewModels.ProfileViewModel.GoToMyOrderAsync"/>.</summary>
         </member>
         <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Button.TextColorTo(Microsoft.Maui.Controls.Button,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
             <summary>
@@ -314,6 +334,9 @@
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.UserName">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "UserName" generated properties.</summary>
         </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Orders">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Orders" generated properties.</summary>
+        </member>
         <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
             <summary>
             A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
@@ -361,6 +384,9 @@
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.UserName">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "UserName" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Orders">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Orders" generated properties.</summary>
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Initials">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Initials" generated properties.</summary>
@@ -416,7 +442,19 @@
         <member name="M:Refit.Implementation.Generated.IcecreamAppServicesIOrderApi.PlaceOrderAsync(IcecreamApp.Shared.Dtos.OrderPlaceDto)">
             <inheritdoc />
         </member>
+        <member name="M:Refit.Implementation.Generated.IcecreamAppServicesIOrderApi.GetMyOrdersAsync">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.IcecreamAppServicesIOrderApi.GetOrderItemsAsync(System.Int64)">
+            <inheritdoc />
+        </member>
         <member name="M:Refit.Implementation.Generated.IcecreamAppServicesIOrderApi.IcecreamApp#Services#IOrderApi#PlaceOrderAsync(IcecreamApp.Shared.Dtos.OrderPlaceDto)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.IcecreamAppServicesIOrderApi.IcecreamApp#Services#IOrderApi#GetMyOrdersAsync">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.IcecreamAppServicesIOrderApi.IcecreamApp#Services#IOrderApi#GetOrderItemsAsync(System.Int64)">
             <inheritdoc />
         </member>
     </members>

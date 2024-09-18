@@ -30,16 +30,28 @@ namespace IcecreamApp.Api.Services
                 var result = await icecreamService.GetIcecreamsAsync();
                 return TypedResults.Ok(result);
             });
-            var orderGroup = app.MapGroup("/api/order").RequireAuthorization();
+            var orderGroup = app.MapGroup("/api/orders").RequireAuthorization();
             orderGroup.MapPost("/place-order",
             async (OrderPlaceDto dto, ClaimsPrincipal principal, OrderService orderService) =>
 
                 {
-                 var result=   await orderService.PlaceOrderAsync(dto, principal.GetUserId());
-                 return result;
+                    var result = await orderService.PlaceOrderAsync(dto, principal.GetUserId());
+                    return result;
                 }
                 );
+            orderGroup.MapGet("",
+            async (ClaimsPrincipal principal, OrderService orderService) =>
 
+                TypedResults.Ok(
+                    await orderService.GetUserOrdersAsync(principal.GetUserId())
+                    )
+                );
+            orderGroup.MapGet("/{orderId:long}/items",
+                async(long orderId, ClaimsPrincipal principal, OrderService orderService) =>
+                TypedResults.Ok(
+                    await orderService.GetUserOrderItemsAsync(orderId,principal.GetUserId())
+                )
+            );
 
             return app;
         }

@@ -39,6 +39,9 @@ namespace IcecreamApp.ViewModels
             _authService.Signout();
             await GoToAsync($"//{nameof(OnboardingPage)}");
         }
+        [RelayCommand]
+        private async Task GoToMyOrderAsync() =>
+            await GoToAsync(nameof(MyOrdersPage), animate: true);
 
 
     }

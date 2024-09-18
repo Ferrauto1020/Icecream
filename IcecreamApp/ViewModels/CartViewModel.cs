@@ -161,14 +161,7 @@ namespace IcecreamApp.ViewModels
             }
             catch (ApiException ex)
             {
-                if(ex.StatusCode == System.Net.HttpStatusCode.Unauthorized)
-                {
-                    await ShowErrorAlertAsync("Session expired");
-                    _authService.Signout();
-                    await GoToAsync($"//{nameof(OnboardingPage)}");
-                }
-                Console.WriteLine(ex.Message);
-                await ShowErrorAlertAsync(ex.Message);
+                await HandleApiExceptionAsync(ex, () => _authService.Signout());
             }
             finally
             {
