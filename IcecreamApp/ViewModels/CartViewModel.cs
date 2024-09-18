@@ -50,6 +50,11 @@ namespace IcecreamApp.ViewModels
             }
             else
             {
+                if(quantity==0)
+                {
+                    await ShowToastAsync("you need at least 1 to buy");
+                    return;
+                }
                 var cartItem = new CartItem
                 {
                     Name = icecream.Name,
