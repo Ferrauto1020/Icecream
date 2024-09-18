@@ -37,25 +37,26 @@ namespace IcecreamApp.ViewModels
                 return;
             }
             IsBusy = true;
-        try
-        {
-            var dto = new ChangePasswordDto(OldPassword!,NewPassword!);
-            var result = await _authApi.ChangePasswordAsync(dto);
-        if(!result.IsSuccess)
-        {
-            await ShowErrorAlertAsync(result.ErrorMessage);
-            return;
-        }
-        await ShowAlertAsync("Success","password changed successfully");
-        }
-        catch (ApiException ex)
-        {
-            await HandleApiExceptionAsync(ex,()=> _authService.Signout());
-        }
-        finally
-        {
-            IsBusy= false;
-        }
+            try
+            {
+                var dto = new ChangePasswordDto(OldPassword!, NewPassword!);
+                var result = await _authApi.ChangePasswordAsync(dto);
+                if (!result.IsSuccess)
+                {
+                    await ShowErrorAlertAsync(result.ErrorMessage);
+                    return;
+                }
+                await ShowAlertAsync("Success", "password changed successfully");
+                OldPassword = NewPassword = ConfirmPassword = null;
+            }
+            catch (ApiException ex)
+            {
+                await HandleApiExceptionAsync(ex, () => _authService.Signout());
+            }
+            finally 
+            {
+                IsBusy = false;
+            }
 
         }
     }
